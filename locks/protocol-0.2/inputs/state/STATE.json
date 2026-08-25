@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.4",
+  "revision": "0.2.0-draft.5",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -21,7 +21,8 @@
     "../logs/2026-08-25-reference-availability-and-ownership.md",
     "../logs/2026-08-25-agent-bootstrap-contract.md",
     "../logs/2026-08-25-semantic-validation-experiment.md",
-    "../logs/2026-08-25-lock-cache-and-adapter-boundary.md"
+    "../logs/2026-08-25-lock-cache-and-adapter-boundary.md",
+    "../logs/2026-08-25-structured-semantic-areas.md"
   ],
   "protocol": {
     "id": "meta-intent",

@@ -11,6 +11,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 ## Desired properties
 
 - The package has only three semantic areas: provenance in `logs`, current authority in `state`, and concrete realizations in `locks`.
+- The three areas define semantic ownership, not internal flatness. Each may acquire structure appropriate to its information: navigational indexes over source logs, hierarchy among user concerns in state, and independently versioned design or target-compatibility layers among realizations.
 - Logs preserve the consequential exchange between intent and investigated reality: desired effects, checked facts, translated tensions, unresolved branches, and decisions. They are neither raw chat transcripts nor independent speaker summaries.
 - State is the current projection of intent, resources, constraints, permissions, acceptance, non-goals, decisions, hints, and protocol selection. It does not impersonate its own source history.
 - A lock is an immutable, purpose-bound cache of one concrete realization of its own package. It may contain or reference target source, patches, generated files, target bindings, ownership and evidence, but it is not the durable source of desired meaning or a mandatory archive of the build environment. Selecting a protocol belongs to state and does not create a local lock. For this meta-intent package the protocol itself is the realization, so it belongs in this package's locks.
@@ -58,6 +59,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Deterministic validation retains mechanically decidable safety and identity checks. LLM validation is a versioned, read-only evidence procedure: it cannot directly write state, accept or activate locks, grant permissions, or turn reviewer agreement into authority.
 - A semantic reviewer receives a deterministically resolved role manifest for package host, state, selected locks, realization targets, state resources, secondary effects, observations, prompts, and permissions. Ambient checkout layout must not silently define those roles.
 - Realization locks are dispensable caches of concrete implementations. Their identities, evidence and ownership records remain valuable, but unavailable bytes or build environments cause re-investigation and synthesis rather than changing intent or invalidating a package whose state remains actionable.
+- Internal structure for logs, state and locks remains a design investigation. Protocol 0.2's concrete files and bundles are a candidate representation, not evidence that one flat document or one version axis is universally sufficient.
 
 ## Constraints and permissions
 
@@ -97,5 +99,6 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Separation of source identity, multi-target installed effects, and removal ownership; the smallest useful machine-readable composition surface must report conflict candidates without pretending to decide semantics.
 - A minimal machine-checkable `AGENTS.md` bootstrap locator and lifecycle pointer that remains human-usable without turning prose lint into semantic proof.
 - Semantic-check prompt scope, input-role schema, prompt-injection isolation, model evidence identity, cache policy, independent evaluator strategy, result storage, and the boundary with executable acceptance probes.
-- Scalable intent hierarchy and an isolated LLM-driven provenance or semantic-network index, including coverage, summary validation, cycles, intent-relative views, and retrieval cost.
+- Internal structure of all three semantic areas: complete and authority-safe indexes over growing linear logs; higher- and lower-level state that keeps concrete design traceable to user concerns; and layered or related locks whose portable design and target-compatibility versions can evolve independently without ambiguous ownership or selection.
+- An isolated LLM-driven provenance or semantic-network index, including coverage, summary validation, cycles, intent-relative views, and retrieval cost, as one candidate response to log growth rather than a predetermined universal representation.
 - Public repository license.

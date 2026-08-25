@@ -9,17 +9,17 @@
   },
   "package": {
     "id": "meta-intent",
-    "revision": "0.2.0-draft.4"
+    "revision": "0.2.0-draft.5"
   },
   "state": {
-    "revision": "0.2.0-draft.4",
+    "revision": "0.2.0-draft.5",
     "entry": {
       "path": "inputs/state/STATE.json",
-      "digest": "sha256:64c0a8ac867b51fcd30184c769761531855fb4be23355c3dfed2a5fdbf4f66d0"
+      "digest": "sha256:87fc64f45242456979fe1323acc30dc035d9a27c6bf3e7d5a83cb61c08735330"
     },
     "document": {
       "path": "inputs/state/STATE.md",
-      "digest": "sha256:ad4629cd8103e9cf0fdc026811c34761104295a5e361213c112b36f351af6634"
+      "digest": "sha256:cc89d97295b0c0af66ad49b34c240c00e35bb9271074859ac123b2c36683ec2a"
     }
   },
   "logs": [
@@ -90,6 +90,10 @@
     {
       "path": "../../logs/2026-08-25-lock-cache-and-adapter-boundary.md",
       "digest": "sha256:83e8eb28f7db1fbe2aa492e72ec723d27e3218e9ee9aff08b33b2d05153ae905"
+    },
+    {
+      "path": "../../logs/2026-08-25-structured-semantic-areas.md",
+      "digest": "sha256:5153287b78b7c4a685e000a4d7c10b32e872a23b153ae0a6904c584b914717ab"
     }
   ],
   "implementation": {
