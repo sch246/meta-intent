@@ -1,0 +1,53 @@
+{
+  "$schema": "meta-intent/semantic-review-inputs/0.1-experimental",
+  "reviewId": "dsh-right-sidebar-candidate-001-2026-08-25",
+  "packageHost": {
+    "uri": "https://github.com/sch246/dsh-right-sidebar.git",
+    "commit": "e1412695af3b35f3c10fed619cf4d31f26ef546b",
+    "semanticRoot": ".intent"
+  },
+  "state": {
+    "entry": {
+      "path": ".intent/state/STATE.json",
+      "digest": "sha256:5267621cf60143d68235fe517b2b1f108ff3e036b31eb8fecad5bb172bab0c3e"
+    },
+    "document": {
+      "path": ".intent/state/STATE.md",
+      "digest": "sha256:a48985444f633417c99b17ded3bdbf3ffd19454d51ee7ce57451a2ecf27334cd"
+    }
+  },
+  "selectedLock": {
+    "path": ".intent/locks/right-sidebar-candidate-001/LOCK.json",
+    "digest": "sha256:b2bbb4390c3e3fcd844c104a2e2cf7991f003f1f89a6b31483161ced6c55aa89"
+  },
+  "realizationTarget": {
+    "role": "primary-implementation-source",
+    "commit": "6b2b58863f0c6d5c94000a0e3be54f23227ce2dc",
+    "paths": "read from selectedLock.target.paths",
+    "governedPathsDifferFromPackageHost": false
+  },
+  "stateResources": [
+    {
+      "id": "target.deepseek-harness",
+      "role": "local-build-observation-resource-not-lock-target",
+      "revision": "b642a10626a950cc95c2d6f839810cb01fe599fe",
+      "worktree": "dirty"
+    }
+  ],
+  "secondaryTargetEffects": [
+    {
+      "role": "manifest-described-harness-patch-target",
+      "baseline": "b150a551b8d465e31e418e1b2eaf5e79bbb7d28e",
+      "mechanicallyBoundAsPrimaryTarget": false
+    }
+  ],
+  "prompts": {
+    "alignment": "sha256:4e2f257ef4b84e1e981510f41ac565a4c2ade751c30a60ab4b58a2760522d8f8",
+    "counterexample": "sha256:d90bcc61907e34f188e7d46a3054664d2f8df17498a15ae19b378ab13018a7a0"
+  },
+  "reviewerPermissions": {
+    "mode": "read-only",
+    "externalActions": false,
+    "stateOrLockWrites": false
+  }
+}

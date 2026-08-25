@@ -21,6 +21,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Target code and runtime behavior provide reality evidence. They cannot silently become the user's intent.
 - An intent package can coexist with a host repository or native package format without making host files a fourth semantic area. A cold Agent can deterministically discover the semantic package and distinguish bootstrap guidance from package authority.
 - A realization may bind immutable external or host identities instead of copying every implementation byte. References remain reproducible only when their locator, identity, applicable scope, and ownership are explicit and cycle-free.
+- Validation is layered by what can actually be established: deterministic checks prove structural and identity invariants, versioned Agent validation intents produce bounded semantic evidence, and authorized users decide meaning, acceptance, permissions, and trade-offs. No layer may borrow the authority of the next.
 
 ## Acceptance criteria
 
@@ -33,7 +34,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - `META-007`: Failed, incomplete, or stale candidates cannot replace last-good. Advancing current state does not erase a lock's historical acceptance; current applicability and drift are investigated separately from frozen-input integrity.
 - `META-008`: Composition, conflict handling, and uninstall preserve separate ownership and unrelated changes; discovery order, hidden last-writer-wins, and blind reversal are not valid decisions.
 - `META-009`: Protocol tensions flow to a canonical meta-intent lineage, decentralized proposals do not silently become authority, and self-hosting avoids both a digest cycle and a claim of semantic self-approval.
-- `META-010`: The locked protocol implementation, validator, tests, template, and right-sidebar example demonstrate structural invariants and cold-Agent usability while making no claim that structural checks prove natural-language fulfillment.
+- `META-010`: The locked protocol implementation, deterministic validator, semantic-validation intents, tests, template, and right-sidebar example demonstrate structural invariants plus bounded semantic review while making no claim that either structural checks or LLM agreement prove natural-language fulfillment.
 - `META-011`: A reference-backed realization separates immutable identity, governed source scope, availability assumptions, installed target effects, and removal ownership sufficiently for drift-aware maintenance and safe degradation or uninstall without requiring universal byte duplication.
 
 ## Resources
@@ -52,6 +53,8 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Protocol 0.2 is a candidate realization that may change the bootstrap kernel. Structural validation and publication do not adopt it.
 - Questions, logs, and Agent agreement are not authority events by themselves. An authority-changing decision must be attributable to its actor and scope; future protocol work must also preserve the decision frame and base state needed to detect concurrent stale decisions.
 - A Git reference's governed paths establish immutable source scope, not automatically the ownership of every installed effect. Path overlap may trigger investigation but cannot silently decide semantic incompatibility or removal ownership.
+- Deterministic validation retains mechanically decidable safety and identity checks. LLM validation is a versioned, read-only evidence procedure: it cannot directly write state, accept or activate locks, grant permissions, or turn reviewer agreement into authority.
+- A semantic reviewer receives a deterministically resolved role manifest for package host, state, selected locks, realization targets, state resources, secondary effects, observations, prompts, and permissions. Ambient checkout layout must not silently define those roles.
 
 ## Constraints and permissions
 
@@ -76,6 +79,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Natural-language Markdown plus a small JSON bootstrap state is an appropriate initial representation.
 - Content digests are useful for immutable lock inputs and artifacts, but cannot establish user authority by themselves.
 - A future runtime may use Effect or Factor Runtime for transactional candidate preparation, activation, and retirement. This remains advisory.
+- Inexpensive independent subagents may run semantic alignment and counterexample checks in parallel. Cache reuse must bind input, prompt, model/configuration, and tool-scope identities; a cache hit remains evidence rather than current truth.
 - A grill-style interview can resolve one user-owned tension at a time while explaining consequences rather than implementation trivia.
 
 ## Open tensions
@@ -88,6 +92,6 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Reference availability, reconstruction and safe degradation when an immutable identity remains valid but every resolver or required historical byte is unavailable.
 - Separation of source identity, multi-target installed effects, and removal ownership; the smallest useful machine-readable composition surface must report conflict candidates without pretending to decide semantics.
 - A minimal machine-checkable `AGENTS.md` bootstrap locator and lifecycle pointer that remains human-usable without turning prose lint into semantic proof.
-- The role of independent semantic evaluators and executable acceptance probes.
+- Semantic-check prompt scope, input-role schema, prompt-injection isolation, model evidence identity, cache policy, independent evaluator strategy, result storage, and the boundary with executable acceptance probes.
 - Scalable intent hierarchy and an isolated LLM-driven provenance or semantic-network index, including coverage, summary validation, cycles, intent-relative views, and retrieval cost.
 - Public repository license.
