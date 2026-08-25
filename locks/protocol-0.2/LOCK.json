@@ -1,0 +1,163 @@
+{
+  "kind": "protocol",
+  "id": "meta-intent-protocol",
+  "revision": "0.2",
+  "status": "candidate",
+  "protocol": {
+    "id": "meta-intent",
+    "revision": "0.2"
+  },
+  "package": {
+    "id": "meta-intent",
+    "revision": "0.2.0-draft.1"
+  },
+  "state": {
+    "revision": "0.2.0-draft.1",
+    "entry": {
+      "path": "inputs/state/STATE.json",
+      "digest": "sha256:0f73b26f23176229cfe97c334fc42ff4f62aa8e7d38946103496780f80bdb85a"
+    },
+    "document": {
+      "path": "inputs/state/STATE.md",
+      "digest": "sha256:825baf1d97ce10add8c8c99ed01e4e6bd82a44b36618735c040b6d5c73487075"
+    }
+  },
+  "logs": [
+    {
+      "path": "../../logs/2026-08-25-information-flow.md",
+      "digest": "sha256:cfa310d92723a0011b985eb029239712f089abb6f21e0b5b4bd092d2ae08e5e4"
+    },
+    {
+      "path": "../../logs/2026-08-25-information-flow-correction.md",
+      "digest": "sha256:ef93eac0ba0ee9622faa57ff7f613e424a62205e5a6fbf78a3b2dfab67102bb3"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-feedback-governance.md",
+      "digest": "sha256:1185dc68fa79529b585878a2846e1aaa36c572a40b2892c2a47e038246dcab34"
+    },
+    {
+      "path": "../../logs/2026-08-25-three-layer-self-hosting.md",
+      "digest": "sha256:81022443c7c17675701b2edc28c704054b7aa4d7215db1dd730af14ae19199ce"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-selection-and-lock-ownership.md",
+      "digest": "sha256:926da3fcd3d89741b2c32620420917476239c7339208201dfaf7918bbfbccb47"
+    },
+    {
+      "path": "../../logs/2026-08-25-why-not-and-semantic-network.md",
+      "digest": "sha256:039c02bcc1a74be32e38965ff177a6d11b2a0b0ed452696f3725b93f2c01754b"
+    },
+    {
+      "path": "../../logs/2026-08-25-publication-and-centrality.md",
+      "digest": "sha256:9c79e43576387024d38c29543bd2a5d1dd0cd5c32f6ceb1f1d00a6f3c1ce12bd"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-0.1-tensions.md",
+      "digest": "sha256:08eb1d9df8498e902cc2106d22a9e5d4949fabe8db9e395a69b997e3fdcc7006"
+    },
+    {
+      "path": "../../logs/2026-08-25-centrality-clarification.md",
+      "digest": "sha256:67810c44a5395b0d5c90abc6f0fda7a05c7f87fba6fc7c99d1c600bff6ef847d"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-0.1-audit-addendum.md",
+      "digest": "sha256:21cae0a5d9c912af7382e3f49c023f2547841c57455b2f7995c20b48c1a77f52"
+    },
+    {
+      "path": "../../logs/2026-08-25-embedded-packages-and-reference-locks.md",
+      "digest": "sha256:323a63f37b9aa4d1dbf7075e0b36e4b27faf91dd9db0d73199719a0c06c6f8aa"
+    },
+    {
+      "path": "../../logs/2026-08-25-installation-compatibility-audit.md",
+      "digest": "sha256:6ea064776a70aff62129903283c3f42da0b816c1998eaa0ab6db23f205f6c9fc"
+    }
+  ],
+  "implementation": {
+    "path": "PROTOCOL.md",
+    "digest": "sha256:4353c9cb6156181dd76c08b98f8ae81b7ac46bd7bb463e1bb6a86fda75e74d79"
+  },
+  "artifacts": [
+    {
+      "path": "PROTOCOL.md",
+      "digest": "sha256:4353c9cb6156181dd76c08b98f8ae81b7ac46bd7bb463e1bb6a86fda75e74d79"
+    },
+    {
+      "path": "bin/reseal.mjs",
+      "digest": "sha256:80fbc21d81d77bb6dbba5d3fadda416e99c74a0db639c28d7aeba4b3642179a7"
+    },
+    {
+      "path": "bin/validate.mjs",
+      "digest": "sha256:52a86e83475757e7b537800a1c6b920225609b3427c3787b2d1769b940cf39b2"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/.intent/locks/.gitkeep",
+      "digest": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/.intent/logs/2026-08-25-bootstrap.md",
+      "digest": "sha256:4df97db3c4d5851a627a25764efe364971e45647f4a81b72f9ea186aaae92db0"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/.intent/state/STATE.json",
+      "digest": "sha256:4a1a2b3a978a0092674ef46253f718254944d64d548448fc5ce63e470d35286e"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/.intent/state/STATE.md",
+      "digest": "sha256:76a84bf8bc85e7cedee562892f089cf70199f3b639af4aac0bfc065114eaf583"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/AGENTS.md",
+      "digest": "sha256:2142eed9fe715578ed037d35b77cafe115edf1c737cbe5b6c3ffdb518e36eaa5"
+    },
+    {
+      "path": "templates/intent-package/AGENTS.md",
+      "digest": "sha256:8efa5b7e583ba4b2df0d5a2b5f7e32f5fc24d604dcf9f28b04f63588dcb0f749"
+    },
+    {
+      "path": "templates/intent-package/locks/.gitkeep",
+      "digest": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "templates/intent-package/logs/README.md",
+      "digest": "sha256:ab312289328c4033ef81ba1d9c5c37d1edc2caa5b0fb32ec38496c98de98653c"
+    },
+    {
+      "path": "templates/intent-package/state/STATE.json",
+      "digest": "sha256:0e4c816950dfc8df1876e66af7c01750b542492fa8447d1c01a899d92651180e"
+    },
+    {
+      "path": "templates/intent-package/state/STATE.md",
+      "digest": "sha256:9176dad10684d5ea18911db4f4d0bc710430e96b7c7f8385c55846484ae4aa84"
+    },
+    {
+      "path": "tests/validate.test.mjs",
+      "digest": "sha256:670820a4b47a77443050c6511b71e481dfd68d8960454883460dff2ee50d9322"
+    }
+  ],
+  "acceptance": {
+    "status": "incomplete",
+    "evidence": [
+      {
+        "id": "structural-conformance-0.2",
+        "observedOn": "2026-08-25",
+        "command": "node locks/protocol-0.2/bin/validate.mjs . locks/protocol-0.2/templates/intent-package locks/protocol-0.2/examples/dsh-right-sidebar",
+        "result": "self-hosted, standalone template, and embedded sidebar example passed"
+      },
+      {
+        "id": "validator-regressions-0.2",
+        "observedOn": "2026-08-25",
+        "command": "node --test locks/protocol-0.2/tests/validate.test.mjs",
+        "result": "19 structural conformance tests passed"
+      }
+    ]
+  },
+  "authority": {
+    "decision": "pending-user-review"
+  },
+  "unresolved": [
+    "real reference-backed install, drift-maintenance, and uninstall evidence",
+    "cross-revision migration policy",
+    "portable trust, signing, and maintainer succession",
+    "machine-readable capability and ownership vocabulary"
+  ]
+}
