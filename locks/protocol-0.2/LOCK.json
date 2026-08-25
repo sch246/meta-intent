@@ -9,17 +9,17 @@
   },
   "package": {
     "id": "meta-intent",
-    "revision": "0.2.0-draft.1"
+    "revision": "0.2.0-draft.2"
   },
   "state": {
-    "revision": "0.2.0-draft.1",
+    "revision": "0.2.0-draft.2",
     "entry": {
       "path": "inputs/state/STATE.json",
-      "digest": "sha256:0f73b26f23176229cfe97c334fc42ff4f62aa8e7d38946103496780f80bdb85a"
+      "digest": "sha256:ad5c31212aa64df6163f62099cbc3ed2ebedc6c3f4c5e01b195bdd56fe77bc53"
     },
     "document": {
       "path": "inputs/state/STATE.md",
-      "digest": "sha256:825baf1d97ce10add8c8c99ed01e4e6bd82a44b36618735c040b6d5c73487075"
+      "digest": "sha256:2d1532526ad0feafa2d1c4f9170fca3ccdd5e0bfd3b5dedc11c6213483210e64"
     }
   },
   "logs": [
@@ -70,6 +70,18 @@
     {
       "path": "../../logs/2026-08-25-installation-compatibility-audit.md",
       "digest": "sha256:6ea064776a70aff62129903283c3f42da0b816c1998eaa0ab6db23f205f6c9fc"
+    },
+    {
+      "path": "../../logs/2026-08-25-serialization-boundary.md",
+      "digest": "sha256:ab6060eb074862a29f8e5d0733caf5c35234bca8615da16b547cad68726338d8"
+    },
+    {
+      "path": "../../logs/2026-08-25-reference-availability-and-ownership.md",
+      "digest": "sha256:1cadd932f4507d9718b616f90dacbaa79b2ceefbce88cb43a8b8ffbb14443d43"
+    },
+    {
+      "path": "../../logs/2026-08-25-agent-bootstrap-contract.md",
+      "digest": "sha256:963daa37784670e0933253bd3e1620454caa5afa5d583c6197b6c065996be71e"
     }
   ],
   "implementation": {
