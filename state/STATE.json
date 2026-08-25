@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.3",
+  "revision": "0.2.0-draft.4",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -20,7 +20,8 @@
     "../logs/2026-08-25-serialization-boundary.md",
     "../logs/2026-08-25-reference-availability-and-ownership.md",
     "../logs/2026-08-25-agent-bootstrap-contract.md",
-    "../logs/2026-08-25-semantic-validation-experiment.md"
+    "../logs/2026-08-25-semantic-validation-experiment.md",
+    "../logs/2026-08-25-lock-cache-and-adapter-boundary.md"
   ],
   "protocol": {
     "id": "meta-intent",
@@ -28,7 +29,7 @@
     "package": "meta-intent",
     "uri": "https://github.com/sch246/meta-intent.git",
     "lock": "locks/protocol-0.2/LOCK.json",
-    "artifactDigest": "sha256:4353c9cb6156181dd76c08b98f8ae81b7ac46bd7bb463e1bb6a86fda75e74d79"
+    "artifactDigest": "sha256:a5ce1e0acacac0e313f3f281256cd79d5d6aa2ba6cf7a5e62af7a385df2539fe"
   },
   "resources": [
     {
@@ -55,6 +56,13 @@
       "revision": "e1412695af3b35f3c10fed619cf4d31f26ef546b",
       "realizationCommit": "6b2b58863f0c6d5c94000a0e3be54f23227ce2dc",
       "candidateLock": ".intent/locks/right-sidebar-candidate-001/LOCK.json"
+    },
+    {
+      "id": "reference.dsh-std-adapter",
+      "kind": "git-repository",
+      "uri": "https://github.com/Yan-Zero/dsh-std.git",
+      "revision": "bb194ad53a72f4fa7da1286c88dcebb488b43eb9",
+      "scope": "adapter-boundary-investigation"
     }
   ],
   "activeLocks": [],

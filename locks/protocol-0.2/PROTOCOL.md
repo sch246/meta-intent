@@ -51,7 +51,7 @@ The current authoritative projection of package identity, intent, acceptance, re
 
 ### Lock
 
-An immutable, purpose-bound record and artifact bundle for one concrete realization of its own package. A lock binds its inputs, outputs, target, evidence, status, and authority by exact identity and digest. Protocol selection is state, not a realization lock. A lock does not redefine the state it realizes.
+An immutable, purpose-bound cache and record for one concrete realization of its own package. A lock binds its retained inputs, outputs, target, evidence, status, and authority by exact identity and digest. It can preserve or recover that implementation when its references remain usable, but it is not the durable source of desired meaning or a mandatory archive of the execution environment. Protocol selection is state, not a realization lock. A lock does not redefine the state it realizes.
 
 ### Protocol
 
@@ -59,7 +59,7 @@ The shared, versioned definition of this entire architecture and its operating r
 
 ### Realization
 
-A concrete interpretation of package state for a particular purpose and target. It may consist of source, patches, generated files, configuration, procedures, or target changes, all owned by its lock bundle when stored in the package.
+A concrete interpretation of package state for a particular purpose and target. It may consist of source, patches, generated files, configuration, procedures, or target changes. Retaining it in a lock preserves an attributable implementation; independently regenerating from the same state need only satisfy that state's acceptance, not reproduce the same design or bytes.
 
 ### Evidence
 
@@ -126,7 +126,7 @@ The semantic root may be the host root or its `.intent/` child. Regular files at
 
 ### 3.3 Lock bundles
 
-Each immediate non-dot child of `locks` is a bundle containing one `LOCK.json`. The directory may be empty when this package has no realization yet. Stored implementation and evidence artifacts remain inside their bundle. Inputs may reference selected state and logs; target identities may reference external reality. A lock never treats an external mutable path as a package-owned artifact.
+Each immediate non-dot child of `locks` is a bundle containing one `LOCK.json`. The directory may be empty when this package has no retained realization. Stored implementation and evidence artifacts remain inside their bundle. Inputs may reference selected state and logs; target identities may reference external reality. A lock never treats an external mutable path as a package-owned artifact. Absence or unavailability of a realization lock does not erase package meaning: an Agent uses current state, the selected protocol, and investigated reality to synthesize another candidate.
 
 Lock kinds are:
 
@@ -141,7 +141,7 @@ Lifecycle status is `candidate`, `accepted`, `failed`, `stale`, or `retired`. `a
 
 ### 3.4 Reference-backed realizations
 
-A realization may store implementation bytes in its bundle or reference immutable target bytes. Reference-backed storage seeks **identity closure**, not byte closure: every consequential locator must carry an immutable identity, governed scope, and ownership semantics sufficient to retrieve, compare, maintain, and uninstall the contribution.
+A realization may store implementation bytes in its bundle or reference immutable target bytes. Reference-backed storage seeks **identity closure**, not byte or environment closure: every retained reference must identify what concrete bytes and governed scope the lock meant. Availability is useful cache evidence, not semantic authority. Maintenance and uninstall use current ownership and drift investigation and must not assume that a historical reference remains retrievable.
 
 The Git form is:
 
@@ -156,7 +156,7 @@ The Git form is:
 }
 ```
 
-The implementation is committed and verified first as `C1`; a later commit `C2` adds the lock that references `C1`. The lock therefore does not identify a commit containing itself. Paths are normalized repository-relative paths with no escape, duplicates, or parent/child overlap. A commit identifies content, not availability, authorization, acceptance, dependency resolution, or runtime compatibility; those remain explicit resources, evidence, and authority.
+The implementation is committed and verified first as `C1`; a later commit `C2` adds the lock that references `C1`. The lock therefore does not identify a commit containing itself. Paths are normalized repository-relative paths with no escape, duplicates, or parent/child overlap. A commit identifies one implementation version, not availability, authorization, acceptance, dependency resolution, runtime compatibility, or a requirement to reproduce its environment. When it cannot be resolved, the Agent may regenerate a different realization from state and current reality.
 
 Non-Git targets use an opaque form with concrete `identity` and `baseline` strings until a more specific protocol form exists. A mutable branch, filesystem path, or URL without a bound immutable identity is not a lock.
 
@@ -222,7 +222,7 @@ The Agent reports the checked constraint, feasible alternatives, and the effect 
 
 ## 5. Installation
 
-Installation is synthesis, not archive extraction:
+Installation is synthesis, not archive extraction. A usable lock may accelerate or stabilize synthesis, but it is optional implementation evidence rather than the source of desired meaning:
 
 1. apply the bootstrap kernel and structurally validate state and selected protocol;
 2. inspect the target and establish an exact revision or equivalent fingerprint;
@@ -234,7 +234,7 @@ Installation is synthesis, not archive extraction:
 8. retain last-good on failure or incomplete evidence;
 9. on acceptance and required authority, activate the new lock and record its target, artifacts, evidence, limits, and predecessor.
 
-An accepted lock is reusable only while every bound input and relevant target fact still matches.
+An accepted lock is reusable as the same concrete realization only while every bound input and relevant target fact still matches. If it is absent, unavailable, or inapplicable, the Agent synthesizes another candidate from state and current reality.
 
 ## 6. Maintenance
 
@@ -257,7 +257,7 @@ Conflicts are never resolved by discovery order, filesystem order, or silent las
 
 ## 8. Uninstall
 
-Uninstall realizes the current target world without one package's desired contribution. The Agent inspects current ownership and drift, preserves unrelated later changes, synthesizes a removal candidate, and verifies that owned effects are gone. Ambiguous shared ownership or destructive removal becomes a translated user decision; uninstall never blindly reverses an obsolete historical diff.
+Uninstall realizes the current target world without one package's desired contribution. The Agent inspects current ownership and drift, preserves unrelated later changes, synthesizes a removal candidate, and verifies that owned effects are gone. A retained lock is useful evidence but is not assumed to be available or complete. Ambiguous shared ownership, insufficient reconstruction evidence, or destructive removal becomes a translated user decision; uninstall never blindly reverses an obsolete historical diff.
 
 ## 9. Protocol feedback and governance
 
