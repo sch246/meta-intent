@@ -9,17 +9,17 @@
   },
   "package": {
     "id": "meta-intent",
-    "revision": "0.1.1"
+    "revision": "0.1.2"
   },
   "state": {
-    "revision": "0.1.1",
+    "revision": "0.1.2",
     "entry": {
       "path": "inputs/state/STATE.json",
-      "digest": "sha256:e85d4dc1c41e4fdede69aef55a2f6deea37e00b21ca9b28398d8449e5bb8aa97"
+      "digest": "sha256:e45e90d0846fcd252a54dd288966565f47bb2155bccd57c8ba1b3085154db8ea"
     },
     "document": {
       "path": "inputs/state/STATE.md",
-      "digest": "sha256:1ef3e2e12eb6d12de88235a125625dab0afc2ca26683cff7e8d204652af4705e"
+      "digest": "sha256:358f2bb5bfc5546d2fe81fb272d1ea5cbd4acefcdb5d57db7694fac5a6e21c02"
     }
   },
   "logs": [
@@ -54,6 +54,14 @@
     {
       "path": "../../logs/2026-08-25-protocol-0.1-tensions.md",
       "digest": "sha256:08eb1d9df8498e902cc2106d22a9e5d4949fabe8db9e395a69b997e3fdcc7006"
+    },
+    {
+      "path": "../../logs/2026-08-25-centrality-clarification.md",
+      "digest": "sha256:67810c44a5395b0d5c90abc6f0fda7a05c7f87fba6fc7c99d1c600bff6ef847d"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-0.1-audit-addendum.md",
+      "digest": "sha256:21cae0a5d9c912af7382e3f49c023f2547841c57455b2f7995c20b48c1a77f52"
     }
   ],
   "implementation": {

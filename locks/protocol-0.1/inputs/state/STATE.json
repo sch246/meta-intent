@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.1/state",
   "id": "meta-intent",
-  "revision": "0.1.1",
+  "revision": "0.1.2",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -12,7 +12,9 @@
     "../logs/2026-08-25-protocol-selection-and-lock-ownership.md",
     "../logs/2026-08-25-why-not-and-semantic-network.md",
     "../logs/2026-08-25-publication-and-centrality.md",
-    "../logs/2026-08-25-protocol-0.1-tensions.md"
+    "../logs/2026-08-25-protocol-0.1-tensions.md",
+    "../logs/2026-08-25-centrality-clarification.md",
+    "../logs/2026-08-25-protocol-0.1-audit-addendum.md"
   ],
   "protocol": {
     "id": "meta-intent",
