@@ -1,0 +1,43 @@
+{
+  "$schema": "meta-intent/0.1/state",
+  "id": "meta-intent",
+  "revision": "0.1.0",
+  "status": "draft",
+  "document": "STATE.md",
+  "logs": [
+    "../logs/2026-08-25-information-flow.md",
+    "../logs/2026-08-25-information-flow-correction.md",
+    "../logs/2026-08-25-protocol-feedback-governance.md",
+    "../logs/2026-08-25-three-layer-self-hosting.md",
+    "../logs/2026-08-25-protocol-selection-and-lock-ownership.md",
+    "../logs/2026-08-25-why-not-and-semantic-network.md"
+  ],
+  "protocol": {
+    "id": "meta-intent",
+    "revision": "0.1",
+    "package": "meta-intent",
+    "lock": "locks/protocol-0.1/LOCK.json",
+    "artifactDigest": "sha256:32fd87d2f501cd58ce93b61a90806b57f4f30239bc007621890728197569b47b"
+  },
+  "resources": [
+    {
+      "id": "reference.dsh-right-sidebar",
+      "kind": "intent-package-example",
+      "uri": "../locks/protocol-0.1/examples/dsh-right-sidebar"
+    },
+    {
+      "id": "target.deepseek-harness",
+      "kind": "git-checkout",
+      "uri": "file:///root/deepseek-harness"
+    },
+    {
+      "id": "source.dsh-right-sidebar",
+      "kind": "git-checkout",
+      "uri": "file:///root/dsh-right-sidebar"
+    }
+  ],
+  "activeLocks": [],
+  "candidateLocks": [
+    "../locks/protocol-0.1/LOCK.json"
+  ]
+}

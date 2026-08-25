@@ -1,0 +1,127 @@
+{
+  "kind": "protocol",
+  "id": "meta-intent-protocol",
+  "revision": "0.1",
+  "status": "candidate",
+  "protocol": {
+    "id": "meta-intent",
+    "revision": "0.1"
+  },
+  "package": {
+    "id": "meta-intent",
+    "revision": "0.1.0"
+  },
+  "state": {
+    "revision": "0.1.0",
+    "entry": {
+      "path": "inputs/state/STATE.json",
+      "digest": "sha256:b3ada7270083c00306b832f20424b8c59562d3f8b1ce130ce1185dc7f2910380"
+    },
+    "document": {
+      "path": "inputs/state/STATE.md",
+      "digest": "sha256:3fbe844972e85b4f3e60a498315d6a88b0fa2c4d466f4d01ac88b30700dc34d4"
+    }
+  },
+  "logs": [
+    {
+      "path": "../../logs/2026-08-25-information-flow.md",
+      "digest": "sha256:cfa310d92723a0011b985eb029239712f089abb6f21e0b5b4bd092d2ae08e5e4"
+    },
+    {
+      "path": "../../logs/2026-08-25-information-flow-correction.md",
+      "digest": "sha256:ef93eac0ba0ee9622faa57ff7f613e424a62205e5a6fbf78a3b2dfab67102bb3"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-feedback-governance.md",
+      "digest": "sha256:1185dc68fa79529b585878a2846e1aaa36c572a40b2892c2a47e038246dcab34"
+    },
+    {
+      "path": "../../logs/2026-08-25-three-layer-self-hosting.md",
+      "digest": "sha256:81022443c7c17675701b2edc28c704054b7aa4d7215db1dd730af14ae19199ce"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-selection-and-lock-ownership.md",
+      "digest": "sha256:926da3fcd3d89741b2c32620420917476239c7339208201dfaf7918bbfbccb47"
+    },
+    {
+      "path": "../../logs/2026-08-25-why-not-and-semantic-network.md",
+      "digest": "sha256:039c02bcc1a74be32e38965ff177a6d11b2a0b0ed452696f3725b93f2c01754b"
+    }
+  ],
+  "implementation": {
+    "path": "PROTOCOL.md",
+    "digest": "sha256:32fd87d2f501cd58ce93b61a90806b57f4f30239bc007621890728197569b47b"
+  },
+  "artifacts": [
+    {
+      "path": "PROTOCOL.md",
+      "digest": "sha256:32fd87d2f501cd58ce93b61a90806b57f4f30239bc007621890728197569b47b"
+    },
+    {
+      "path": "bin/validate.mjs",
+      "digest": "sha256:f07573f9a2fc3acb09a04d58b0d8a67aef29b93aa2846bbc011d6320ffe71899"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/locks/.gitkeep",
+      "digest": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/logs/2026-08-25-bootstrap.md",
+      "digest": "sha256:edf192f28fc4513dbfda276c0e4399fe8eb286d5a5d3d4aab7916066d0fd344b"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/state/STATE.json",
+      "digest": "sha256:943171a561873b939e9409ea177c87255f9e4306fbbd187a083ef60f3d1e175b"
+    },
+    {
+      "path": "examples/dsh-right-sidebar/state/STATE.md",
+      "digest": "sha256:54c31fb2e048775bcbbf942ba69d569f12323c4f4fedeae4fe8734de68a68ac6"
+    },
+    {
+      "path": "templates/intent-package/locks/.gitkeep",
+      "digest": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "templates/intent-package/logs/README.md",
+      "digest": "sha256:ab312289328c4033ef81ba1d9c5c37d1edc2caa5b0fb32ec38496c98de98653c"
+    },
+    {
+      "path": "templates/intent-package/state/STATE.json",
+      "digest": "sha256:a22754d790c68e6fa08da21539b8d3d31ddb41c510118bed8c5d91d0da00efc2"
+    },
+    {
+      "path": "templates/intent-package/state/STATE.md",
+      "digest": "sha256:9176dad10684d5ea18911db4f4d0bc710430e96b7c7f8385c55846484ae4aa84"
+    },
+    {
+      "path": "tests/validate.test.mjs",
+      "digest": "sha256:2025c2b939549e408a0a5e023117e4c27d00f01ee56ee6557d9694e178519dd3"
+    }
+  ],
+  "acceptance": {
+    "status": "incomplete",
+    "evidence": [
+      {
+        "id": "structural-conformance",
+        "observedOn": "2026-08-25",
+        "command": "node locks/protocol-0.1/bin/validate.mjs . locks/protocol-0.1/templates/intent-package locks/protocol-0.1/examples/dsh-right-sidebar",
+        "result": "self-hosted package, minimal template, and zero-code sidebar example passed"
+      },
+      {
+        "id": "validator-regressions",
+        "observedOn": "2026-08-25",
+        "command": "node --test locks/protocol-0.1/tests/validate.test.mjs",
+        "result": "12 positive and negative conformance tests passed"
+      }
+    ]
+  },
+  "authority": {
+    "decision": "pending-user-review"
+  },
+  "unresolved": [
+    "portable trust and signing",
+    "canonical governance and maintainer succession",
+    "cross-revision migration policy",
+    "independent semantic evaluation"
+  ]
+}

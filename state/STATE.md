@@ -1,0 +1,71 @@
+# Meta-intent state
+
+Status: draft. This is the current semantic authority for what the meta-intent package is expected to achieve. The selected protocol lock is the candidate concrete realization; its definitions do not silently rewrite this state.
+
+## Intent
+
+Enable a user to express a desired outcome as an Agent-maintained intent package that may contain no implementation code. An Agent uses that package to investigate target reality, translate tensions into consequences for the user's intent, synthesize or maintain a concrete realization, verify it against observable acceptance, and uninstall its contribution safely.
+
+Define the intent-package system itself through a self-hosted meta-intent package. Its concrete realization is a protocol lock that defines the whole package architecture and operating model, not only the syntax of the state document.
+
+## Desired properties
+
+- The package has only three semantic areas: provenance in `logs`, current authority in `state`, and concrete realizations in `locks`.
+- Logs preserve the consequential exchange between intent and investigated reality: desired effects, checked facts, translated tensions, unresolved branches, and decisions. They are neither raw chat transcripts nor independent speaker summaries.
+- State is the current projection of intent, resources, constraints, permissions, acceptance, non-goals, decisions, hints, and protocol selection. It does not impersonate its own source history.
+- A lock is an immutable, purpose-bound realization of its own package. For an ordinary intent package it may contain target source, patches, generated files, target bindings, and evidence. Selecting a protocol belongs to state and does not create a local lock. For this meta-intent package the protocol itself is the realization, so it belongs in this package's locks.
+- The selected protocol defines all constitutive concepts, topology, information flow, authority boundaries, lifecycle operations, composition, conflicts, conformance, governance, and evolution.
+- The user owns desired effects, value choices, permissions, trade-offs, and semantic approval. The Agent owns investigation, evidence collection, feasibility analysis, tension translation, candidate synthesis, and authorized verification.
+- Target code and runtime behavior provide reality evidence. They cannot silently become the user's intent.
+
+## Acceptance criteria
+
+- `META-001`: A cold reader can locate the current state, selected protocol, supporting provenance, and realizations from the three semantic areas; presentation files such as a root README do not become authority.
+- `META-002`: The protocol defines the complete ontology, relationships, topology, information flow, authority, lifecycle, composition, conformance, governance, and evolution without relying on the historical conversation.
+- `META-003`: A natural-language package with no target implementation code and an empty `locks` directory can be recognized while its state selects an exact protocol lock owned by the meta-intent package.
+- `META-004`: Logs, state, lock artifacts, and acceptance evidence remain separately attributable. Investigations may preserve useful why-not and verified-no-change evidence without pretending that state or implementation changed, and lower layers cannot redefine higher-authority meaning.
+- `META-005`: Feedback first causes investigation and a report of the reality boundary. Maintenance distinguishes verified no change, implementation mismatch, intent clarification, intent revision, reality tension, and protocol tension; only semantic or authority changes revise state.
+- `META-006`: The protocol states exactly when an Agent may continue autonomously and when a user decision is required.
+- `META-007`: Failed, incomplete, or stale candidates cannot replace last-good, and a lock becomes inapplicable when its bound state, protocol, target, resources, permissions, artifacts, or evidence no longer match.
+- `META-008`: Composition, conflict handling, and uninstall preserve separate ownership and unrelated changes; discovery order, hidden last-writer-wins, and blind reversal are not valid decisions.
+- `META-009`: Protocol tensions flow to a canonical meta-intent lineage, decentralized proposals do not silently become authority, and self-hosting avoids both a digest cycle and a claim of semantic self-approval.
+- `META-010`: The locked protocol implementation, validator, tests, template, and right-sidebar example demonstrate structural invariants and cold-Agent usability while making no claim that structural checks prove natural-language fulfillment.
+
+## Resources
+
+- The fact-aligned records listed by `STATE.json` are the provenance for this state.
+- The bundled `dsh-right-sidebar` package is the first zero-code reference case.
+- `/root/dsh-right-sidebar` and `/root/deepseek-harness` are bootstrap reality resources for that example, not portable requirements of the protocol.
+
+## Constraints and permissions
+
+- Do not publish, push, create a remote, choose a license, or change GitHub state without explicit user authorization.
+- Do not store credentials or secrets in logs, state, locks, examples, or acceptance evidence.
+- Do not rewrite old logs to make a later interpretation look inevitable; append a correction or superseding decision.
+- Do not revise approved intent merely to make a candidate pass.
+- Do not describe unexecuted acceptance as passed or equate successful patching, compilation, clean merge, or Agent confidence with user-visible acceptance.
+- Do not require package-provided executable code. Executable realization artifacts are allowed only when the package's purpose and granted permissions require them.
+- Keep the fixed pre-protocol bootstrap surface minimal and make any incompatible change to it explicit.
+
+## Non-goals
+
+- A general package registry, dependency solver, event bus, deployment platform, or universal intent DSL.
+- Automatic semantic conflict resolution or automatic derivation of user preferences from frequency, code, telemetry, or generated artifacts.
+- Model, vendor, programming-language, target-framework, or runtime lock-in.
+- A bootstrap claim that signing, portable trust, governance succession, or cross-version migration is already solved.
+
+## Implementation hints
+
+- Natural-language Markdown plus a small JSON bootstrap state is an appropriate initial representation.
+- Content digests are useful for immutable lock inputs and artifacts, but cannot establish user authority by themselves.
+- A future runtime may use Effect or Factor Runtime for transactional candidate preparation, activation, and retirement. This remains advisory.
+- A grill-style interview can resolve one user-owned tension at a time while explaining consequences rather than implementation trivia.
+
+## Open tensions
+
+- Portable signing and trust for authority events.
+- Canonical repository ownership, maintainer succession, publication, and protocol adoption governance.
+- Compatibility, migration, and deprecation across immutable protocol revisions.
+- The role of independent semantic evaluators and executable acceptance probes.
+- Scalable intent hierarchy and an isolated LLM-driven provenance or semantic-network index, including coverage, summary validation, cycles, intent-relative views, and retrieval cost.
+- Public repository name, visibility, and license.

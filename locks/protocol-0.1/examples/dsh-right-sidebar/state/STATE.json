@@ -1,0 +1,44 @@
+{
+  "$schema": "meta-intent/0.1/state",
+  "id": "dsh-right-sidebar",
+  "revision": "0.1.0-draft.1",
+  "status": "draft",
+  "document": "STATE.md",
+  "logs": [
+    "../logs/2026-08-25-bootstrap.md"
+  ],
+  "protocol": {
+    "id": "meta-intent",
+    "revision": "0.1",
+    "package": "meta-intent",
+    "lock": "locks/protocol-0.1/LOCK.json",
+    "artifactDigest": "sha256:32fd87d2f501cd58ce93b61a90806b57f4f30239bc007621890728197569b47b"
+  },
+  "resources": [
+    {
+      "id": "target.deepseek-harness",
+      "kind": "git-checkout",
+      "uri": "file:///root/deepseek-harness",
+      "revision": "b642a10626a950cc95c2d6f839810cb01fe599fe",
+      "worktree": "dirty-bootstrap-observation"
+    },
+    {
+      "id": "evidence.sidebar-proposal",
+      "kind": "design-document",
+      "uri": "file:///root/dsh-right-sidebar/PROPOSAL.md",
+      "revision": "worktree-at-f04501bfd63b2898cb259f3c7676ac713a8c9cd0"
+    },
+    {
+      "id": "runtime.dsh-web",
+      "kind": "system-service",
+      "uri": "systemd:dsh-web"
+    },
+    {
+      "id": "assembly.web-profile",
+      "kind": "dsh-profile",
+      "uri": "dsh-profile:web"
+    }
+  ],
+  "activeLocks": [],
+  "candidateLocks": []
+}
