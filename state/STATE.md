@@ -15,6 +15,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - State is the current projection of intent, resources, constraints, permissions, acceptance, non-goals, decisions, hints, and protocol selection. It does not impersonate its own source history.
 - A lock is an immutable, purpose-bound realization of its own package. For an ordinary intent package it may contain target source, patches, generated files, target bindings, and evidence. Selecting a protocol belongs to state and does not create a local lock. For this meta-intent package the protocol itself is the realization, so it belongs in this package's locks.
 - The selected protocol defines all constitutive concepts, topology, information flow, authority boundaries, lifecycle operations, composition, conflicts, conformance, governance, and evolution.
+- Common protocol meaning is maintained through one canonical meta-intent lineage. Evidence, experiments, forks, and proposals may be decentralized, but do not silently acquire canonical authority.
 - The user owns desired effects, value choices, permissions, trade-offs, and semantic approval. The Agent owns investigation, evidence collection, feasibility analysis, tension translation, candidate synthesis, and authorized verification.
 - Target code and runtime behavior provide reality evidence. They cannot silently become the user's intent.
 
@@ -34,8 +35,15 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 ## Resources
 
 - The fact-aligned records listed by `STATE.json` are the provenance for this state.
+- The current public repository is `https://github.com/sch246/meta-intent`.
 - The bundled `dsh-right-sidebar` package is the first zero-code reference case.
 - `/root/dsh-right-sidebar` and `/root/deepseek-harness` are bootstrap reality resources for that example, not portable requirements of the protocol.
+
+## Current decisions
+
+- Canonical central maintenance of common protocol meaning is intentional and is a purpose of this meta-intent package.
+- Decentralized evidence and proposal channels remain valid inputs, but protocol authority changes only through the canonical lineage under user-authorized governance.
+- The current repository is public so external reviewers can inspect candidates and provenance. Repository publication does not adopt protocol 0.1 and does not choose a license.
 
 ## Constraints and permissions
 
@@ -46,6 +54,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Do not describe unexecuted acceptance as passed or equate successful patching, compilation, clean merge, or Agent confidence with user-visible acceptance.
 - Do not require package-provided executable code. Executable realization artifacts are allowed only when the package's purpose and granted permissions require them.
 - Keep the fixed pre-protocol bootstrap surface minimal and make any incompatible change to it explicit.
+- In the current collaboration, Codex is the only Agent with technical repository write and push access. The user retains semantic authority; write capability does not authorize protocol adoption or unrelated changes. Revisit this constraint when another trusted write path exists.
 
 ## Non-goals
 
@@ -64,8 +73,8 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 ## Open tensions
 
 - Portable signing and trust for authority events.
-- Canonical repository ownership, maintainer succession, publication, and protocol adoption governance.
+- Maintainer succession, signing, quorum, and protocol-adoption mechanics within the user-approved canonical center.
 - Compatibility, migration, and deprecation across immutable protocol revisions.
 - The role of independent semantic evaluators and executable acceptance probes.
 - Scalable intent hierarchy and an isolated LLM-driven provenance or semantic-network index, including coverage, summary validation, cycles, intent-relative views, and retrieval cost.
-- Public repository name, visibility, and license.
+- Public repository license.

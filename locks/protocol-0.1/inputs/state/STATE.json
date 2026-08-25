@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.1/state",
   "id": "meta-intent",
-  "revision": "0.1.0",
+  "revision": "0.1.1",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -10,7 +10,9 @@
     "../logs/2026-08-25-protocol-feedback-governance.md",
     "../logs/2026-08-25-three-layer-self-hosting.md",
     "../logs/2026-08-25-protocol-selection-and-lock-ownership.md",
-    "../logs/2026-08-25-why-not-and-semantic-network.md"
+    "../logs/2026-08-25-why-not-and-semantic-network.md",
+    "../logs/2026-08-25-publication-and-centrality.md",
+    "../logs/2026-08-25-protocol-0.1-tensions.md"
   ],
   "protocol": {
     "id": "meta-intent",
@@ -21,6 +23,12 @@
   },
   "resources": [
     {
+      "id": "repository.meta-intent",
+      "kind": "git-repository",
+      "uri": "https://github.com/sch246/meta-intent",
+      "visibility": "public"
+    },
+    {
       "id": "reference.dsh-right-sidebar",
       "kind": "intent-package-example",
       "uri": "../locks/protocol-0.1/examples/dsh-right-sidebar"
@@ -28,12 +36,14 @@
     {
       "id": "target.deepseek-harness",
       "kind": "git-checkout",
-      "uri": "file:///root/deepseek-harness"
+      "uri": "file:///root/deepseek-harness",
+      "scope": "local-bootstrap"
     },
     {
       "id": "source.dsh-right-sidebar",
       "kind": "git-checkout",
-      "uri": "file:///root/dsh-right-sidebar"
+      "uri": "file:///root/dsh-right-sidebar",
+      "scope": "local-bootstrap"
     }
   ],
   "activeLocks": [],

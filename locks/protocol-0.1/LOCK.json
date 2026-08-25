@@ -9,17 +9,17 @@
   },
   "package": {
     "id": "meta-intent",
-    "revision": "0.1.0"
+    "revision": "0.1.1"
   },
   "state": {
-    "revision": "0.1.0",
+    "revision": "0.1.1",
     "entry": {
       "path": "inputs/state/STATE.json",
-      "digest": "sha256:b3ada7270083c00306b832f20424b8c59562d3f8b1ce130ce1185dc7f2910380"
+      "digest": "sha256:e85d4dc1c41e4fdede69aef55a2f6deea37e00b21ca9b28398d8449e5bb8aa97"
     },
     "document": {
       "path": "inputs/state/STATE.md",
-      "digest": "sha256:3fbe844972e85b4f3e60a498315d6a88b0fa2c4d466f4d01ac88b30700dc34d4"
+      "digest": "sha256:1ef3e2e12eb6d12de88235a125625dab0afc2ca26683cff7e8d204652af4705e"
     }
   },
   "logs": [
@@ -46,6 +46,14 @@
     {
       "path": "../../logs/2026-08-25-why-not-and-semantic-network.md",
       "digest": "sha256:039c02bcc1a74be32e38965ff177a6d11b2a0b0ed452696f3725b93f2c01754b"
+    },
+    {
+      "path": "../../logs/2026-08-25-publication-and-centrality.md",
+      "digest": "sha256:9c79e43576387024d38c29543bd2a5d1dd0cd5c32f6ceb1f1d00a6f3c1ce12bd"
+    },
+    {
+      "path": "../../logs/2026-08-25-protocol-0.1-tensions.md",
+      "digest": "sha256:08eb1d9df8498e902cc2106d22a9e5d4949fabe8db9e395a69b997e3fdcc7006"
     }
   ],
   "implementation": {
