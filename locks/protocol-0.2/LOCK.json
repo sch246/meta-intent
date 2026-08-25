@@ -15,11 +15,11 @@
     "revision": "0.2.0-draft.4",
     "entry": {
       "path": "inputs/state/STATE.json",
-      "digest": "sha256:9c2d58cfe7a6108456a77a0d3690e8f43e1ef50190ea6831435c499d6a51f522"
+      "digest": "sha256:64c0a8ac867b51fcd30184c769761531855fb4be23355c3dfed2a5fdbf4f66d0"
     },
     "document": {
       "path": "inputs/state/STATE.md",
-      "digest": "sha256:38c3c17e100bd54a36e48240d55dbf78d4a6c484daaa619f6d9dd3577f847308"
+      "digest": "sha256:ad4629cd8103e9cf0fdc026811c34761104295a5e361213c112b36f351af6634"
     }
   },
   "logs": [

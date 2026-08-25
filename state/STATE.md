@@ -43,7 +43,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - The fact-aligned records listed by `STATE.json` are the provenance for this state.
 - The current public repository is `https://github.com/sch246/meta-intent`.
 - The bundled `dsh-right-sidebar` package is the first zero-code reference case.
-- The public `sch246/dsh-right-sidebar` package is the first embedded reference-backed realization experiment. It selects an incomplete candidate lock that binds implementation commit `6b2b58863f0c6d5c94000a0e3be54f23227ce2dc`; it is not accepted lifecycle evidence.
+- The public `sch246/dsh-right-sidebar` package is the first embedded reference-backed realization experiment. Its incomplete candidate binds implementation commit `6b2b58863f0c6d5c94000a0e3be54f23227ce2dc` and now carries bounded isolated install, drift-maintenance and uninstall evidence; it remains unaccepted and lacks portable adapter, browser and composition acceptance.
 - Public `Yan-Zero/dsh-std` commit `bb194ad53a72f4fa7da1286c88dcebb488b43eb9` is bounded evidence for a product-adapter responsibility boundary; it is not part of this protocol implementation and does not yet provide the required right-sidebar surface.
 - `/root/dsh-right-sidebar` and `/root/deepseek-harness` are bootstrap reality resources for that example, not portable requirements of the protocol.
 
@@ -92,7 +92,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Authentication, adoption mechanics, maintainer succession, and any future delegation or quorum rules for this protocol center; none currently dilute the user's semantic authority.
 - Compatibility, migration, and deprecation across immutable protocol revisions.
 - Structured authority-event attribution, decision-frame provenance, base-state binding, and concurrent decision reconciliation without pretending that feasible alternatives are mechanically complete.
-- Positive install, drift-maintenance, composition, and uninstall evidence from a real reference-backed realization.
+- Positive multi-package composition and intent-managed multi-target adapter evidence beyond the sidebar candidate's isolated install, drift-maintenance and uninstall run.
 - The minimum current-reality and ownership evidence needed for safe maintenance or uninstall when a realization cache and its historical bytes are unavailable.
 - Separation of source identity, multi-target installed effects, and removal ownership; the smallest useful machine-readable composition surface must report conflict candidates without pretending to decide semantics.
 - A minimal machine-checkable `AGENTS.md` bootstrap locator and lifecycle pointer that remains human-usable without turning prose lint into semantic proof.

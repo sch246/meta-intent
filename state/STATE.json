@@ -53,7 +53,7 @@
       "id": "experiment.dsh-right-sidebar",
       "kind": "intent-package",
       "uri": "https://github.com/sch246/dsh-right-sidebar",
-      "revision": "e1412695af3b35f3c10fed619cf4d31f26ef546b",
+      "revision": "0d0c09996b8d74e543aaa3cccf04e530936690cb",
       "realizationCommit": "6b2b58863f0c6d5c94000a0e3be54f23227ce2dc",
       "candidateLock": ".intent/locks/right-sidebar-candidate-001/LOCK.json"
     },
