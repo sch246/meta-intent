@@ -1,6 +1,6 @@
 # Meta-intent state
 
-Status: draft. This is the current semantic authority for what the meta-intent package is expected to achieve. The selected protocol lock is the candidate concrete realization; its definitions do not silently rewrite this state.
+Status: draft state interpreted by the adopted protocol 0.2 lock. This is the current semantic authority for what the meta-intent package is expected to achieve. Adoption makes the selected protocol realization active; its definitions still do not silently rewrite this evolving state.
 
 ## Intent
 
@@ -14,6 +14,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - The three areas define semantic ownership, not internal flatness. Each may acquire structure appropriate to its information: navigational indexes over source logs, hierarchy among user concerns in state, and independently versioned design or target-compatibility layers among realizations.
 - Logs preserve the consequential exchange between intent and investigated reality: desired effects, checked facts, translated tensions, unresolved branches, and decisions. They are neither raw chat transcripts nor independent speaker summaries.
 - State is the current projection of intent, resources, constraints, permissions, acceptance, non-goals, decisions, hints, and protocol selection. It does not impersonate its own source history.
+- Any user-cared observable effect that regeneration must preserve belongs in state, even when the current realization expresses it through CSS, numeric geometry, a framework hook, or another concrete mechanism. The chosen mechanism and incidental measurements remain lock-level facts unless the user explicitly makes them normative.
 - A lock is an immutable, purpose-bound cache of one concrete realization of its own package. It may contain or reference target source, patches, generated files, target bindings, ownership and evidence, but it is not the durable source of desired meaning or a mandatory archive of the build environment. Selecting a protocol belongs to state and does not create a local lock. For this meta-intent package the protocol itself is the realization, so it belongs in this package's locks.
 - State must be semantically sufficient for an Agent to synthesize a realization above its acceptance floor when no usable lock exists. Reusing a lock may preserve one exact implementation; regeneration promises state-level acceptance, not byte, design or toolchain identity.
 - The selected protocol defines all constitutive concepts, topology, information flow, authority boundaries, lifecycle operations, composition, conflicts, conformance, governance, and evolution.
@@ -44,8 +45,9 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - The fact-aligned records listed by `STATE.json` are the provenance for this state.
 - The current public repository is `https://github.com/sch246/meta-intent`.
 - The bundled `dsh-right-sidebar` package is the first zero-code reference case.
-- The public `sch246/dsh-right-sidebar` package is the first embedded reference-backed realization experiment. Its incomplete candidate binds implementation commit `6b2b58863f0c6d5c94000a0e3be54f23227ce2dc` and now carries bounded isolated install, drift-maintenance and uninstall evidence; it remains unaccepted and lacks portable adapter, browser and composition acceptance.
+- The public `sch246/dsh-right-sidebar` package is the first embedded reference-backed realization experiment. Repository commit `d9bcfa3746b952f30ca4a6ffb05218309e8e15a6` selects incomplete C6 over implementation commit `aa4baa3660f0ab7a06793baf576166340343bd09`; it carries bounded lifecycle evidence plus the user's live confirmation that the deployed shell runs and its reported visual/layout defects are resolved. Two-way feature synchronization, current-source drift/uninstall, portable loading and complete adapter migration remain unaccepted.
 - Public `Yan-Zero/dsh-std` commit `bb194ad53a72f4fa7da1286c88dcebb488b43eb9` is bounded evidence for a product-adapter responsibility boundary; it is not part of this protocol implementation and does not yet provide the required right-sidebar surface.
+- The local `dsh-std` adapter experiment at `f9f359fd163ac843faf1cf570acbd25840f46934` contains separate C3 locks for the portable sidebar-view contract and the DSH-specific mapping, both referencing source commit `580b330323c13ec568adab2c35fabf8f8fa6b194`. This is structured-lock evidence, not a portable public realization or an adopted universal layering model.
 - `/root/dsh-right-sidebar` and `/root/deepseek-harness` are bootstrap reality resources for that example, not portable requirements of the protocol.
 
 ## Current decisions
@@ -53,13 +55,14 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Within this protocol lineage, canonical semantic authority is fully centralized in the user who created it. This is constitutive of the protocol, not a compromise that implementation evidence can reopen.
 - Someone who rejects this canonical meaning may create or fork a distinct protocol with its own center. A fork can instead be a proposal when its author explicitly seeks adoption by this lineage; the two roles must not be conflated.
 - The current repository is public so external reviewers can inspect candidates and provenance. Repository publication does not adopt protocol 0.2 and does not choose a license.
-- Protocol 0.2 is a candidate realization that may change the bootstrap kernel. Structural validation and publication do not adopt it.
+- The user explicitly adopted protocol 0.2. Its accepted active lock is the canonical interpreter for this lineage until a later candidate receives a separate adoption decision; structural validation and publication alone remain insufficient for such a decision.
 - Questions, logs, and Agent agreement are not authority events by themselves. An authority-changing decision must be attributable to its actor and scope; future protocol work must also preserve the decision frame and base state needed to detect concurrent stale decisions.
 - A Git reference's governed paths establish immutable source scope, not automatically the ownership of every installed effect. Path overlap may trigger investigation but cannot silently decide semantic incompatibility or removal ownership.
 - Deterministic validation retains mechanically decidable safety and identity checks. LLM validation is a versioned, read-only evidence procedure: it cannot directly write state, accept or activate locks, grant permissions, or turn reviewer agreement into authority.
 - A semantic reviewer receives a deterministically resolved role manifest for package host, state, selected locks, realization targets, state resources, secondary effects, observations, prompts, and permissions. Ambient checkout layout must not silently define those roles.
 - Realization locks are dispensable caches of concrete implementations. Their identities, evidence and ownership records remain valuable, but unavailable bytes or build environments cause re-investigation and synthesis rather than changing intent or invalidating a package whose state remains actionable.
 - Internal structure for logs, state and locks remains a design investigation. Protocol 0.2's concrete files and bundles are a candidate representation, not evidence that one flat document or one version axis is universally sufficient.
+- The user-tested sidebar shell closes the current experiment milestone and authorizes publication of this state update. The subsequent protocol 0.2 adoption is a separate authority event and does not erase sidebar acceptance that has not been executed.
 
 ## Constraints and permissions
 
@@ -94,7 +97,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Authentication, adoption mechanics, maintainer succession, and any future delegation or quorum rules for this protocol center; none currently dilute the user's semantic authority.
 - Compatibility, migration, and deprecation across immutable protocol revisions.
 - Structured authority-event attribution, decision-frame provenance, base-state binding, and concurrent decision reconciliation without pretending that feasible alternatives are mechanically complete.
-- Positive multi-package composition and intent-managed multi-target adapter evidence beyond the sidebar candidate's isolated install, drift-maintenance and uninstall run.
+- Positive multi-package composition and intent-managed multi-target adapter evidence beyond the sidebar experiment's direct-shell milestone, earlier isolated lifecycle run, and local split contract/mapping candidates.
 - The minimum current-reality and ownership evidence needed for safe maintenance or uninstall when a realization cache and its historical bytes are unavailable.
 - Separation of source identity, multi-target installed effects, and removal ownership; the smallest useful machine-readable composition surface must report conflict candidates without pretending to decide semantics.
 - A minimal machine-checkable `AGENTS.md` bootstrap locator and lifecycle pointer that remains human-usable without turning prose lint into semantic proof.

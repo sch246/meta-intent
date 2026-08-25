@@ -11,6 +11,10 @@ const packageRoot = resolve(protocolRoot, "../..")
 const protocolPath = resolve(protocolRoot, "PROTOCOL.md")
 const lockPath = resolve(protocolRoot, "LOCK.json")
 const protocolDigest = await fileDigest(protocolPath)
+const previous = JSON.parse(await readFile(lockPath, "utf8"))
+if (previous.status === "accepted") {
+  throw new Error("refusing to reseal an accepted protocol lock; create a new candidate bundle")
+}
 const inputs = process.argv.slice(2)
 const hosts = inputs.length === 0
   ? [packageRoot, resolve(protocolRoot, "templates/intent-package"), resolve(protocolRoot, "examples/dsh-right-sidebar")]
@@ -45,7 +49,6 @@ const state = JSON.parse(stateBytes)
 await copyFile(statePath, resolve(protocolRoot, "inputs/state/STATE.json"))
 await copyFile(documentPath, resolve(protocolRoot, "inputs/state/STATE.md"))
 
-const previous = JSON.parse(await readFile(lockPath, "utf8"))
 const logs = []
 for (const selected of state.logs) {
   const path = resolve(dirname(statePath), selected)

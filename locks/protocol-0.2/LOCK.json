@@ -2,24 +2,24 @@
   "kind": "protocol",
   "id": "meta-intent-protocol",
   "revision": "0.2",
-  "status": "candidate",
+  "status": "accepted",
   "protocol": {
     "id": "meta-intent",
     "revision": "0.2"
   },
   "package": {
     "id": "meta-intent",
-    "revision": "0.2.0-draft.5"
+    "revision": "0.2.0-draft.7"
   },
   "state": {
-    "revision": "0.2.0-draft.5",
+    "revision": "0.2.0-draft.7",
     "entry": {
       "path": "inputs/state/STATE.json",
-      "digest": "sha256:87fc64f45242456979fe1323acc30dc035d9a27c6bf3e7d5a83cb61c08735330"
+      "digest": "sha256:f92eb59e5c54439e141618e47773a1795df75eea06f9f4982b78961164ecf7fe"
     },
     "document": {
       "path": "inputs/state/STATE.md",
-      "digest": "sha256:cc89d97295b0c0af66ad49b34c240c00e35bb9271074859ac123b2c36683ec2a"
+      "digest": "sha256:18121304996db631f063602991974dfec0916c44465ce4d278c7d49c638bccc9"
     }
   },
   "logs": [
@@ -94,6 +94,14 @@
     {
       "path": "../../logs/2026-08-25-structured-semantic-areas.md",
       "digest": "sha256:5153287b78b7c4a685e000a4d7c10b32e872a23b153ae0a6904c584b914717ab"
+    },
+    {
+      "path": "../../logs/2026-08-26-sidebar-experiment-closure.md",
+      "digest": "sha256:0ceafe9bd93c71f0eb32d9613cbd254273f01691796ac7cce0657656b3745293"
+    },
+    {
+      "path": "../../logs/2026-08-26-protocol-0.2-adoption.md",
+      "digest": "sha256:8fd7a2d812c13bbdce6392c73932da6d54c67a43d54a55e12505d9ad23d958f4"
     }
   ],
   "implementation": {
@@ -107,7 +115,7 @@
     },
     {
       "path": "bin/reseal.mjs",
-      "digest": "sha256:80fbc21d81d77bb6dbba5d3fadda416e99c74a0db639c28d7aeba4b3642179a7"
+      "digest": "sha256:52a59615f6a2adb1d9f63910e3388672758751fbefb7e95653804af93592f4a3"
     },
     {
       "path": "bin/validate.mjs",
@@ -183,7 +191,7 @@
     }
   ],
   "acceptance": {
-    "status": "incomplete",
+    "status": "passed",
     "evidence": [
       {
         "id": "structural-conformance-0.2",
@@ -196,14 +204,22 @@
         "observedOn": "2026-08-25",
         "command": "node --test locks/protocol-0.2/tests/validate.test.mjs",
         "result": "19 structural conformance tests passed"
+      },
+      {
+        "id": "explicit-protocol-adoption",
+        "observedOn": "2026-08-26",
+        "artifact": "../../logs/2026-08-26-protocol-0.2-adoption.md",
+        "result": "the user explicitly adopted protocol 0.2 with its recorded known boundaries"
       }
     ]
   },
   "authority": {
-    "decision": "pending-user-review"
+    "decision": "approved",
+    "decisionLog": "../../logs/2026-08-26-protocol-0.2-adoption.md",
+    "digest": "sha256:8fd7a2d812c13bbdce6392c73932da6d54c67a43d54a55e12505d9ad23d958f4"
   },
   "unresolved": [
-    "real reference-backed install, drift-maintenance, and uninstall evidence",
+    "full reference-backed lifecycle coverage beyond the bounded sidebar experiments",
     "cross-revision migration policy",
     "portable trust, signing, and maintainer succession",
     "machine-readable capability and ownership vocabulary"
