@@ -1,10 +1,10 @@
-# meta-intent 0.2
+# meta-intent
 
-`meta-intent` is a self-hosted draft of an Agent-maintained intent-package protocol. An intent package keeps provenance in `logs`, current authority in `state`, and concrete realizations in `locks`; it may contain no target implementation code.
+`meta-intent` defines what an intent package is. An intent package is maintained with Agents to create and continuously maintain one project. Causal sources live in `logs`, current semantic authority lives in hierarchical `state`, and immutable `locks` retain exact realized versions and evidence.
 
 This README is a non-normative entry point. It does not define package meaning. Read the current [state](state/STATE.md), its machine-readable [entry](state/STATE.json), and the adopted [protocol 0.2](locks/protocol-0.2/PROTOCOL.md) for authority and interpretation.
 
-Protocol 0.2 defines standalone/embedded discovery, reference-backed Git realizations, package URI declaration, historical last-good semantics, and mechanical sealing for candidates. It is adopted with explicit open tensions; bounded sidebar lifecycle and live-shell evidence does not imply that every realization or compatibility path is accepted.
+Current STATE may evolve under the adopted protocol. Each adopted protocol revision remains an immutable protocol LOCK because other packages select its exact identity and digest. Passing validation proves structural consistency only; it does not adopt a successor or prove semantic fulfillment.
 
 ## Validate
 

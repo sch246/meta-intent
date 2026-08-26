@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.15",
+  "revision": "0.2.0-draft.16",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -32,7 +32,8 @@
     "../logs/2026-08-26-source-locator-practice-evidence.md",
     "../logs/2026-08-26-purpose-comment-candidate-seal.md",
     "../logs/2026-08-26-harness-remote-baseline-correction.md",
-    "../logs/2026-08-26-skill-manager-extraction-practice.md"
+    "../logs/2026-08-26-skill-manager-extraction-practice.md",
+    "../logs/2026-08-27-project-purpose-state-lock-and-evidence-boundary.md"
   ],
   "protocol": {
     "id": "meta-intent",
@@ -50,59 +51,10 @@
       "visibility": "public"
     },
     {
-      "id": "reference.dsh-right-sidebar",
-      "kind": "intent-package-example",
-      "uri": "../locks/protocol-0.2/examples/dsh-right-sidebar"
-    },
-    {
-      "id": "target.deepseek-harness",
-      "kind": "git-checkout",
-      "uri": "file:///root/deepseek-harness",
-      "revision": "b150a551b8d465e31e418e1b2eaf5e79bbb7d28e",
-      "scope": "official remote reproducible baseline and active local branch identity; separately owned intent-package interventions remain dirty"
-    },
-    {
-      "id": "experiment.dsh-right-sidebar",
-      "kind": "intent-package",
-      "uri": "https://github.com/sch246/dsh-right-sidebar",
-      "revision": "7a25573",
-      "realizationCommit": "caa1031c139ca6567ad7f2186ff66466d5689280",
-      "candidateLock": ".intent/locks/right-sidebar-linux-web-0.3.0-candidate.9/LOCK.json"
-    },
-    {
-      "id": "experiment.dsh-preset-manager",
-      "kind": "intent-package",
-      "uri": "https://github.com/sch246/dsh-preset-manager",
-      "revision": "5699609",
-      "realizationCommit": "e82f6dcf83fab6e795b0bc5c4abf7fdfcfc14095",
-      "candidateLock": ".intent/locks/preset-manager-linux-web-0.1.0-candidate.3/LOCK.json"
-    },
-    {
-      "id": "experiment.dsh-skill-manager",
-      "kind": "intent-package",
-      "uri": "file:///root/dsh-skill-manager",
-      "revision": "532e8ecfaf5e093f070f6f9b644dd2bb4f036d23",
-      "realizationCommit": "c374b087c6a4bb463c3e1cba17ac3009507ed8a7",
-      "candidateLock": ".intent/locks/skill-manager-linux-web-0.1.0-candidate.1/LOCK.json"
-    },
-    {
-      "id": "reference.dsh-std-adapter",
-      "kind": "git-repository",
-      "uri": "https://github.com/Yan-Zero/dsh-std.git",
-      "revision": "bb194ad53a72f4fa7da1286c88dcebb488b43eb9",
-      "scope": "adapter-boundary-investigation"
-    },
-    {
-      "id": "experiment.dsh-std-sidebar-adapter",
-      "kind": "intent-package",
-      "uri": "file:///root/dsh-std",
-      "revision": "f9f359fd163ac843faf1cf570acbd25840f46934",
-      "realizationCommit": "580b330323c13ec568adab2c35fabf8f8fa6b194",
-      "candidateLocks": [
-        ".intent/locks/sidebar-view-contract-candidate-003/LOCK.json",
-        ".intent/locks/sidebar-view-dsh-mapping-candidate-003/LOCK.json"
-      ],
-      "scope": "local-sidebar-adapter-experiment"
+      "id": "current.protocol-0.2",
+      "kind": "accepted-protocol",
+      "uri": "../locks/protocol-0.2/LOCK.json",
+      "scope": "active interpreter and immutable historical last-good during successor investigation"
     }
   ],
   "activeLocks": [
