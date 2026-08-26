@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.14",
+  "revision": "0.2.0-draft.15",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -31,7 +31,8 @@
     "../logs/2026-08-26-purpose-comment-marker-correction.md",
     "../logs/2026-08-26-source-locator-practice-evidence.md",
     "../logs/2026-08-26-purpose-comment-candidate-seal.md",
-    "../logs/2026-08-26-harness-remote-baseline-correction.md"
+    "../logs/2026-08-26-harness-remote-baseline-correction.md",
+    "../logs/2026-08-26-skill-manager-extraction-practice.md"
   ],
   "protocol": {
     "id": "meta-intent",
@@ -58,7 +59,7 @@
       "kind": "git-checkout",
       "uri": "file:///root/deepseek-harness",
       "revision": "b150a551b8d465e31e418e1b2eaf5e79bbb7d28e",
-      "scope": "official remote reproducible baseline; local assembly remains dirty at b642a106"
+      "scope": "official remote reproducible baseline and active local branch identity; separately owned intent-package interventions remain dirty"
     },
     {
       "id": "experiment.dsh-right-sidebar",
@@ -75,6 +76,14 @@
       "revision": "5699609",
       "realizationCommit": "e82f6dcf83fab6e795b0bc5c4abf7fdfcfc14095",
       "candidateLock": ".intent/locks/preset-manager-linux-web-0.1.0-candidate.3/LOCK.json"
+    },
+    {
+      "id": "experiment.dsh-skill-manager",
+      "kind": "intent-package",
+      "uri": "file:///root/dsh-skill-manager",
+      "revision": "532e8ecfaf5e093f070f6f9b644dd2bb4f036d23",
+      "realizationCommit": "c374b087c6a4bb463c3e1cba17ac3009507ed8a7",
+      "candidateLock": ".intent/locks/skill-manager-linux-web-0.1.0-candidate.1/LOCK.json"
     },
     {
       "id": "reference.dsh-std-adapter",
