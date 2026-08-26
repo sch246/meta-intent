@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.12",
+  "revision": "0.2.0-draft.13",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -29,7 +29,8 @@
     "../logs/2026-08-26-source-region-ownership-markers.md",
     "../logs/2026-08-26-marker-locator-simplification.md",
     "../logs/2026-08-26-purpose-comment-marker-correction.md",
-    "../logs/2026-08-26-source-locator-practice-evidence.md"
+    "../logs/2026-08-26-source-locator-practice-evidence.md",
+    "../logs/2026-08-26-purpose-comment-candidate-seal.md"
   ],
   "protocol": {
     "id": "meta-intent",
@@ -61,17 +62,17 @@
       "id": "experiment.dsh-right-sidebar",
       "kind": "intent-package",
       "uri": "https://github.com/sch246/dsh-right-sidebar",
-      "revision": "5c641c0",
-      "realizationCommit": "9e57ba08071172108498f6a6241d0d57afc30e5a",
-      "candidateLock": ".intent/locks/right-sidebar-linux-web-0.3.0-candidate.7/LOCK.json"
+      "revision": "8fc569b",
+      "realizationCommit": "e7821d1876096aeee80c952bb4c907774ff9ba1a",
+      "candidateLock": ".intent/locks/right-sidebar-linux-web-0.3.0-candidate.8/LOCK.json"
     },
     {
       "id": "experiment.dsh-preset-manager",
       "kind": "intent-package",
       "uri": "https://github.com/sch246/dsh-preset-manager",
-      "revision": "bb7c25f",
-      "realizationCommit": "24b69aad6a4f0a6964e68101da70418f0adace5d",
-      "candidateLock": ".intent/locks/preset-manager-linux-web-0.1.0-candidate.1/LOCK.json"
+      "revision": "35f8b8a",
+      "realizationCommit": "e82f6dcf83fab6e795b0bc5c4abf7fdfcfc14095",
+      "candidateLock": ".intent/locks/preset-manager-linux-web-0.1.0-candidate.2/LOCK.json"
     },
     {
       "id": "reference.dsh-std-adapter",
