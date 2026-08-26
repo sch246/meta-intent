@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.9",
+  "revision": "0.2.0-draft.10",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -26,7 +26,8 @@
     "../logs/2026-08-26-sidebar-experiment-closure.md",
     "../logs/2026-08-26-protocol-0.2-adoption.md",
     "../logs/2026-08-26-protocol-centrality-scope.md",
-    "../logs/2026-08-26-source-region-ownership-markers.md"
+    "../logs/2026-08-26-source-region-ownership-markers.md",
+    "../logs/2026-08-26-marker-locator-simplification.md"
   ],
   "protocol": {
     "id": "meta-intent",
