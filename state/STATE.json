@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.8",
+  "revision": "0.2.0-draft.9",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -25,7 +25,8 @@
     "../logs/2026-08-25-structured-semantic-areas.md",
     "../logs/2026-08-26-sidebar-experiment-closure.md",
     "../logs/2026-08-26-protocol-0.2-adoption.md",
-    "../logs/2026-08-26-protocol-centrality-scope.md"
+    "../logs/2026-08-26-protocol-centrality-scope.md",
+    "../logs/2026-08-26-source-region-ownership-markers.md"
   ],
   "protocol": {
     "id": "meta-intent",

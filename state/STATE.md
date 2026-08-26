@@ -25,6 +25,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Target code and runtime behavior provide reality evidence. They cannot silently become the user's intent.
 - An intent package can coexist with a host repository or native package format without making host files a fourth semantic area. A cold Agent can deterministically discover the semantic package and distinguish bootstrap guidance from package authority.
 - A realization may bind immutable external or host identities instead of copying every implementation byte. References remain reproducible only when their locator, identity, applicable scope, and ownership are explicit and cycle-free.
+- A realization that intrudes into shared target source leaves machine-recognizable ownership markers at the nearest maintainable location to each managed region. File-level declarations are valid only for wholly governed files. Markers identify exclusive or composed realization ownership and aid discovery, drift investigation, and bounded removal, while state, locks, and installation receipts remain the ownership authority.
 - Validation is layered by what can actually be established: deterministic checks prove structural and identity invariants, versioned Agent validation intents produce bounded semantic evidence, and authorized users decide meaning, acceptance, permissions, and trade-offs. No layer may borrow the authority of the next.
 
 ## Acceptance criteria
@@ -40,6 +41,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - `META-009`: Protocol tensions flow to a canonical meta-intent lineage, decentralized proposals do not silently become authority, and self-hosting avoids both a digest cycle and a claim of semantic self-approval.
 - `META-010`: The locked protocol implementation, deterministic validator, semantic-validation intents, tests, template, and right-sidebar example demonstrate structural invariants plus bounded semantic review while making no claim that either structural checks or LLM agreement prove natural-language fulfillment.
 - `META-011`: A reference-backed realization separates immutable identity, governed source scope, installed target effects, and removal ownership without turning reference or environment availability into semantic authority; when the cache cannot be used, an Agent can regenerate from state and current reality without requiring byte-identical output.
+- `META-012`: Intrusive shared-source changes are locally and compositionally attributable. Each managed region has the closest practicable stable marker bound by realization and installation evidence; separated regions remain separately marked; whole-file markers are limited to wholly governed files; composed owners merge deterministically; removing one owner re-synthesizes remaining contributions; missing or drifted markers stop blind mutation.
 
 ## Resources
 
@@ -59,6 +61,8 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - The user explicitly adopted protocol 0.2. Its accepted active lock is the canonical interpreter for this lineage until a later candidate receives a separate adoption decision; structural validation and publication alone remain insufficient for such a decision.
 - Questions, logs, and Agent agreement are not authority events by themselves. An authority-changing decision must be attributable to its actor and scope; future protocol work must also preserve the decision frame and base state needed to detect concurrent stale decisions.
 - A Git reference's governed paths establish immutable source scope, not automatically the ownership of every installed effect. Path overlap may trigger investigation but cannot silently decide semantic incompatibility or removal ownership.
+- A nearby source marker is required discovery and drift evidence for intrusive shared-source realizations, but mention of a package or scenario does not prove ownership. Removal requires agreement between the marked region, the realization lock, target-side installation evidence, and current drift investigation.
+- Source-region composition is explicit. Non-overlapping owners keep independent nearby regions; a jointly determined region carries a deterministic composed owner set. Uninstalling one owner invokes recomposition for the remaining owners rather than deleting the region or trusting installation order.
 - Deterministic validation retains mechanically decidable safety and identity checks. LLM validation is a versioned, read-only evidence procedure: it cannot directly write state, accept or activate locks, grant permissions, or turn reviewer agreement into authority.
 - A semantic reviewer receives a deterministically resolved role manifest for package host, state, selected locks, realization targets, state resources, secondary effects, observations, prompts, and permissions. Ambient checkout layout must not silently define those roles.
 - Realization locks are dispensable caches of concrete implementations. Their identities, evidence and ownership records remain valuable, but unavailable bytes or build environments cause re-investigation and synthesis rather than changing intent or invalidating a package whose state remains actionable.
@@ -73,6 +77,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Do not revise approved intent merely to make a candidate pass.
 - Do not describe unexecuted acceptance as passed or equate successful patching, compilation, clean merge, or Agent confidence with user-visible acceptance.
 - Do not require package-provided executable code. Executable realization artifacts are allowed only when the package's purpose and granted permissions require them.
+- Do not treat a file-header ownership declaration as covering local shared-source edits unless the realization governs the entire file, and do not treat source comments alone as authority to remove code.
 - Keep the fixed pre-protocol bootstrap surface minimal and make any incompatible change to it explicit.
 - In the current collaboration, Codex is the only Agent with technical repository write and push access. The user retains semantic authority; write capability does not authorize protocol adoption or unrelated changes. Revisit this constraint when another trusted write path exists.
 
@@ -101,6 +106,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Positive multi-package composition and intent-managed multi-target adapter evidence beyond the sidebar experiment's direct-shell milestone, earlier isolated lifecycle run, and local split contract/mapping candidates.
 - The minimum current-reality and ownership evidence needed for safe maintenance or uninstall when a realization cache and its historical bytes are unavailable.
 - Separation of source identity, multi-target installed effects, and removal ownership; the smallest useful machine-readable composition surface must report conflict candidates without pretending to decide semantics.
+- The exact cross-language source-region marker encoding, composed-owner receipt model, generated-source mapping, and isolated install/merge/drift/recomposition/uninstall evidence required for a successor protocol.
 - A minimal machine-checkable `AGENTS.md` bootstrap locator and lifecycle pointer that remains human-usable without turning prose lint into semantic proof.
 - Semantic-check prompt scope, input-role schema, prompt-injection isolation, model evidence identity, cache policy, independent evaluator strategy, result storage, and the boundary with executable acceptance probes.
 - Independent cold-regeneration evidence for `META-003`, including at least two isolated syntheses from the same zero-code state and immutable target baseline, compared by state acceptance rather than implementation identity.
