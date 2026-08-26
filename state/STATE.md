@@ -18,8 +18,9 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - A lock is an immutable, purpose-bound cache of one concrete realization of its own package. It may contain or reference target source, patches, generated files, target bindings, ownership and evidence, but it is not the durable source of desired meaning or a mandatory archive of the build environment. Selecting a protocol belongs to state and does not create a local lock. For this meta-intent package the protocol itself is the realization, so it belongs in this package's locks.
 - State must be semantically sufficient for an Agent to synthesize a realization above its acceptance floor when no usable lock exists. Reusing a lock may preserve one exact implementation; regeneration promises state-level acceptance, not byte, design or toolchain identity.
 - The selected protocol defines all constitutive concepts, topology, information flow, authority boundaries, lifecycle operations, composition, conflicts, conformance, governance, and evolution.
-- Each protocol has one fully centralized canonical meaning and authority. Ecosystem-level decentralization occurs through distinct protocols and forks with their own centers; evidence and proposal forks do not silently acquire authority over the lineage they address.
-- The user owns desired effects, value choices, permissions, trade-offs, and semantic approval. The Agent owns investigation, evidence collection, feasibility analysis, tension translation, candidate synthesis, and authorized verification.
+- Each protocol identity and immutable revision has one canonical meaning. Ecosystem-level decentralization occurs through distinct protocol lineages and semantic forks; evidence and proposal forks do not silently acquire authority over the lineage they address.
+- Authority to choose a canonical successor within one lineage is established by an external authority event and projected by its meta-intent state.
+- Each intent-package user owns that package's desired effects, protocol adoption, value choices, permissions, trade-offs, and semantic approval. The Agent owns investigation, evidence collection, feasibility analysis, tension translation, candidate synthesis, and authorized verification.
 - Authority-changing decisions cross an explicit serialization boundary: parallel investigation produces an attributable decision frame, an authorized decision is the semantic linearization point, logs preserve the event, and state projects only conclusions with continuing normative force. Asking or logging alone does not grant authority.
 - Target code and runtime behavior provide reality evidence. They cannot silently become the user's intent.
 - An intent package can coexist with a host repository or native package format without making host files a fourth semantic area. A cold Agent can deterministically discover the semantic package and distinguish bootstrap guidance from package authority.
@@ -52,7 +53,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 
 ## Current decisions
 
-- Within this protocol lineage, canonical semantic authority is fully centralized in the user who created it. This is constitutive of the protocol, not a compromise that implementation evidence can reopen.
+- Within this protocol lineage, successor-governance authority remains fully centralized in the user who created it until an explicit authority event delegates or transfers a defined scope.
 - Someone who rejects this canonical meaning may create or fork a distinct protocol with its own center. A fork can instead be a proposal when its author explicitly seeks adoption by this lineage; the two roles must not be conflated.
 - The current repository is public so external reviewers can inspect candidates and provenance. Repository publication does not adopt protocol 0.2 and does not choose a license.
 - The user explicitly adopted protocol 0.2. Its accepted active lock is the canonical interpreter for this lineage until a later candidate receives a separate adoption decision; structural validation and publication alone remain insufficient for such a decision.
@@ -102,6 +103,7 @@ Define the intent-package system itself through a self-hosted meta-intent packag
 - Separation of source identity, multi-target installed effects, and removal ownership; the smallest useful machine-readable composition surface must report conflict candidates without pretending to decide semantics.
 - A minimal machine-checkable `AGENTS.md` bootstrap locator and lifecycle pointer that remains human-usable without turning prose lint into semantic proof.
 - Semantic-check prompt scope, input-role schema, prompt-injection isolation, model evidence identity, cache policy, independent evaluator strategy, result storage, and the boundary with executable acceptance probes.
+- Independent cold-regeneration evidence for `META-003`, including at least two isolated syntheses from the same zero-code state and immutable target baseline, compared by state acceptance rather than implementation identity.
 - Internal structure of all three semantic areas: complete and authority-safe indexes over growing linear logs; higher- and lower-level state that keeps concrete design traceable to user concerns; and layered or related locks whose portable design and target-compatibility versions can evolve independently without ambiguous ownership or selection.
 - An isolated LLM-driven provenance or semantic-network index, including coverage, summary validation, cycles, intent-relative views, and retrieval cost, as one candidate response to log growth rather than a predetermined universal representation.
 - Public repository license.
