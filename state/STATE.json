@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.18",
+  "revision": "0.2.0-draft.19",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -35,7 +35,8 @@
     "../logs/2026-08-26-skill-manager-extraction-practice.md",
     "../logs/2026-08-27-project-purpose-state-lock-and-evidence-boundary.md",
     "../logs/2026-08-27-attention-and-projection-correction.md",
-    "../logs/2026-08-27-state-projection-and-query-driven-retrieval.md"
+    "../logs/2026-08-27-state-projection-and-query-driven-retrieval.md",
+    "../logs/2026-08-27-contextos-source-lineage-audit.md"
   ],
   "protocol": {
     "id": "meta-intent",
