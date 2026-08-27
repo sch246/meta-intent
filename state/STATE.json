@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.21",
+  "revision": "0.2.0-draft.22",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -38,7 +38,8 @@
     "../logs/2026-08-27-state-projection-and-query-driven-retrieval.md",
     "../logs/2026-08-27-contextos-source-lineage-audit.md",
     "../logs/2026-08-27-state-log-shared-routing-and-surprise.md",
-    "../logs/2026-08-27-cross-session-assimilation-capability.md"
+    "../logs/2026-08-27-cross-session-assimilation-capability.md",
+    "../logs/2026-08-27-cross-session-assimilation-authority-confirmation.md"
   ],
   "protocol": {
     "id": "meta-intent",
