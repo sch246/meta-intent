@@ -39,6 +39,17 @@ STATE must remain sufficient for an Agent to synthesize a realization above its 
 
 The appropriate retrieval structure and context budget remain an experiment. Full-history replay is available for audit; this STATE does not claim that bounded cold-session recovery has already been demonstrated.
 
+#### `IP-2.1` — Carry maintenance operations across sessions
+
+`IP-2.1` derives from `IP-2` and `IP-3`: locating package artifacts is insufficient when the next Agent still needs the originating conversation or user instructions about which history to inspect.
+
+- A cold Agent receiving new feedback can query current intent and source history, recover relevant prior occurrences and interventions, and produce durable results that a later cold Agent actually consumes.
+- The cycle distinguishes another description of one occurrence from a new recurrence using attributable evidence. Unexpected recurrence investigates both the prior intervention and the maintained route that failed to prevent or expose it; the resulting repair becomes available to the next recurrence.
+- Stable handling may leave the LLM path when it is mechanical within existing authority. Bypassing a user-owned decision boundary for a named future event class requires explicit delegation and returns to investigation when its assumptions fail.
+- The capability does not depend on the originating conversation, a user instruction to inspect particular LOGs, or one predetermined runtime, index or storage structure.
+
+No accepted operator or experiment currently demonstrates this capability.
+
 ### `IP-3` — Translate between intent and reality
 
 `IP-3` derives from `IP-0`: continuous maintenance requires checked feedback to reach the narrowest responsible layer.
@@ -96,6 +107,7 @@ The appropriate retrieval structure and context budget remain an experiment. Ful
 - `META-012`: Intrusive shared-source changes remain locally discoverable and safe to recompose or remove only after current ownership and drift investigation.
 - `META-013`: Evidence claiming hierarchical-intent coverage names the concrete lower-order instances it tested and, for each, recovers the higher-order intent served, attributable derivation basis and applicable scope. An empty covered set does not pass.
 - `META-014`: An adopted protocol release remains byte-identifiable through its LOCK after current meta-intent STATE advances, and external package references continue to resolve to the same artifact digest.
+- `META-015`: For a named non-empty set of recurrence cases, a cold Agent starting without the originating conversation and without procedural user directions discovers relevant current intent, prior occurrence and intervention, classifies duplicate report versus expected or unexpected recurrence from checked target evidence, preserves the result, and changes a later cold Agent's maintenance path. Evidence names every tested case and external observation; zero cases, user-directed LOG selection or an unconsumed result does not pass.
 
 ## Current decisions and resources
 
@@ -104,6 +116,7 @@ The appropriate retrieval structure and context budget remain an experiment. Ful
 - External packages and targets may provide bounded evidence without becoming current meta-intent meaning. Exact identities and target chronology remain recoverable through selected LOGs, frozen LOCK evidence or the owning package; hot STATE names a resource only while its role remains currently relevant.
 - No protocol 0.3 candidate is created or adopted by this revision.
 - The repository's existing semantic `counterexample-review` is the required adversarial evidence procedure for future strong alignment or successor claims; its result remains evidence-only.
+- No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied.
 
 ## Constraints and permissions
 
@@ -139,6 +152,7 @@ These are investigation lenses over preserved provenance. They do not automatica
 ## Open tensions
 
 - Cold-session retrieval accuracy, context cost and causal trace quality compared with full replay; no qualifying experiment has run yet.
+- The smallest execution carrier for cross-session assimilation and recurrence review: natural-language bootstrap, Agent skill, CLI, persistent index or another mechanism; none is selected before the cold-session experiment.
 - How growing source LOGs remain usable and completely attributable without presuming that an index or graph is required.
 - How arbitrary-depth intent derivation remains traceable in practice without preselecting a mechanical representation or letting a derived view become semantic authority.
 - Whether query-driven reading and continuation of ordinary provenance naturally preserve attention loss, difficulty generalization and context-sensitive reopening across cold sessions without a special schema or metric.
