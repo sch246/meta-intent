@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.16",
+  "revision": "0.2.0-draft.17",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -33,7 +33,8 @@
     "../logs/2026-08-26-purpose-comment-candidate-seal.md",
     "../logs/2026-08-26-harness-remote-baseline-correction.md",
     "../logs/2026-08-26-skill-manager-extraction-practice.md",
-    "../logs/2026-08-27-project-purpose-state-lock-and-evidence-boundary.md"
+    "../logs/2026-08-27-project-purpose-state-lock-and-evidence-boundary.md",
+    "../logs/2026-08-27-attention-and-projection-correction.md"
   ],
   "protocol": {
     "id": "meta-intent",

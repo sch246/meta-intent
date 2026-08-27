@@ -12,7 +12,7 @@ The package may contain no project implementation code. It remains meaningful wh
 
 ## Derived intent
 
-STATE may organize intent to arbitrary depth. A lower-order intent remains traceable to the higher-order intent it serves and to the reality boundary that caused its derivation. Concrete feedback may propagate upward; only appropriate authority changes normative user meaning.
+STATE may organize intent to arbitrary depth. A lower-order intent remains traceable to the higher-order intent it serves, its attributable derivation basis and its applicable scope. That basis may be direct user specification, design decomposition, an authority decision or investigated reality feedback; only the last requires a reality-boundary source. Concrete feedback may propagate upward, but only appropriate authority changes normative user meaning.
 
 ### `IP-1` — Preserve distinct information authority
 
@@ -94,14 +94,14 @@ The appropriate retrieval structure and context budget remain an experiment. Ful
 - `META-010`: Structural checks, semantic counterexample evidence and user acceptance remain distinct and make no claim beyond their observed scope.
 - `META-011`: Reference-backed realizations separate immutable source identity, governed scope, installed effects and removal ownership without treating availability as semantic authority.
 - `META-012`: Intrusive shared-source changes remain locally discoverable and safe to recompose or remove only after current ownership and drift investigation.
-- `META-013`: Every tested lower-order intent can identify the higher-order intent it serves and the reality boundary that derived it.
+- `META-013`: Evidence claiming hierarchical-intent coverage names the concrete lower-order instances it tested and, for each, recovers the higher-order intent served, attributable derivation basis and applicable scope. An empty covered set does not pass.
 - `META-014`: An adopted protocol release remains byte-identifiable through its LOCK after current meta-intent STATE advances, and external package references continue to resolve to the same artifact digest.
 
 ## Current decisions and resources
 
 - Protocol 0.2 remains adopted and active. Its accepted LOCK is the canonical interpreter and immutable historical last-good for this lineage.
 - The canonical public repository is `https://github.com/sch246/meta-intent`; the user retains semantic authority until explicitly delegating a scope.
-- Multiple current external intent packages provide bounded evidence because they select protocol 0.2 by its exact artifact digest. Their identities and target-specific chronology remain in LOG and their own realization evidence rather than hot meta-intent STATE.
+- External packages and targets may provide bounded evidence without becoming current meta-intent meaning. Exact identities and target chronology remain recoverable through selected LOGs, frozen LOCK evidence or the owning package; hot STATE names a resource only while its role remains currently relevant.
 - No protocol 0.3 candidate is created or adopted by this revision.
 - The repository's existing semantic `counterexample-review` is the required adversarial evidence procedure for future strong alignment or successor claims; its result remains evidence-only.
 
@@ -121,25 +121,29 @@ The appropriate retrieval structure and context budget remain an experiment. Ful
 - Raw transcript archival or deterministic reconstruction of natural-language meaning from complete history.
 - A package registry, dependency solver, deployment platform or universal target ABI.
 - Automatic semantic conflict resolution, automatic user-preference inference or automatic governance succession.
+- Guaranteed sustained attention or progress on arbitrarily difficult learning. Loss of attention may suspend investigation, but does not establish falsity, resolution or permanent exclusion.
 - Model, vendor, programming-language, target-framework or runtime lock-in.
 
 ## Investigation hints
 
-Surprise is a candidate LOG-retention and compression heuristic, not current protocol semantics:
+Surprise is a candidate explanation for how attention, learning and growing provenance may organize themselves; it is not current protocol machinery or semantic authority.
 
-- first-order surprise is an observation not predicted by current STATE;
-- second-order surprise asks whether prediction error decreases after STATE correction;
-- higher orders estimate change in the preceding-order quantity and carry increasingly broad uncertainty at fixed evidence;
-- zero observed surprise is inconclusive when changing reality was excluded from observation.
+- Reality that defeats current expectation can supply attention.
+- Learning can sustain attention by producing further distinctions and expectations through which further surprise becomes possible. Second-order surprise refers to this endogenous continuation, not to a second evaluator scoring whether the first learning was good.
+- When learning ceases to produce enough surprise to hold attention, the attempted path, encountered boundary and situated loss of novelty may still inform later reading. Similar histories can naturally become less informative and be generalized without a mandated counter, score, node type or graph.
+- A changed environment reopens an old difficulty only when the change can bear on the earlier obstruction; unrelated drift does not reset its history.
+- Zero observed surprise is inconclusive when changing reality was excluded from observation, and surprise does not distinguish useful learning from noise by itself.
 
-Promotion requires version-bound predictions, corresponding observations, STATE identities and a later retention or retrieval operation that consumes the result. A single project may never provide enough interaction for a useful higher-order estimate.
+These are investigation lenses over preserved provenance. They do not automatically revise STATE, infer user preference or require a predetermined retrieval structure.
 
 ## Open tensions
 
 - Cold-session retrieval accuracy, context cost and causal trace quality compared with full replay; no qualifying experiment has run yet.
-- The smallest complete and authority-safe index over growing source LOGs.
-- Mechanical representation of arbitrary-depth intent derivation without making an index the semantic authority.
-- Prediction and observation records needed to test surprise-based retention without encouraging noisy or excluded observations.
+- How growing source LOGs remain usable and completely attributable without presuming that an index or graph is required.
+- How arbitrary-depth intent derivation remains traceable in practice without preselecting a mechanical representation or letting a derived view become semantic authority.
+- Whether query-driven reading and continuation of ordinary provenance naturally preserve attention loss, difficulty generalization and context-sensitive reopening across cold sessions without a special schema or metric.
+- Evidence coverage that prevents zero observations, zero tested instances or an unscoped `passed` claim from becoming vacuous success.
+- How a current projection can shed target-specific facts only after their continuing explanatory or recovery value remains available in source provenance or immutable realization evidence.
 - Portable signing, authentication, maintainer succession and concurrent authority decisions.
 - Compatibility, migration and deprecation across immutable protocol revisions.
 - Minimum current ownership and drift evidence for safe maintenance or uninstall when historical realization bytes are unavailable.
