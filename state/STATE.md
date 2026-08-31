@@ -59,6 +59,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - Target reality supplies facts and constraints but cannot silently become user intent.
 - Feedback is distinguished as verified no change, implementation mismatch, intent clarification, intent revision, reality tension or protocol tension before mutation.
 - Authority-changing decisions preserve actor, scope, relevant base STATE and the investigated decision frame; asking or logging alone does not grant authority.
+- Classification determines which artifacts change. An implementation mismatch under already selected intent may change only the realization and focused evidence; LOG, STATE and LOCK are independent authorities rather than mandatory workflow stages.
 
 ### `IP-4` — Create and maintain realizations safely
 
@@ -70,6 +71,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - Composition and conflict handling preserve package identity and do not use discovery order or hidden last-writer-wins as semantic decisions.
 - Uninstall realizes current reality without one package's contribution, preserving unrelated later changes rather than blindly reversing historical diffs.
 - Intrusive shared-source realizations leave nearby, compositionally discoverable ownership evidence; comments alone never authorize deletion.
+- Several defects in one realization may be repaired as one logical implementation episode under one STATE revision. Git history preserves meaningful changes rather than diagnostic chronology.
 
 ### `IP-5` — Keep protocol meaning versioned and referencable
 
@@ -90,6 +92,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - Authorized users decide meaning, acceptance, permissions and trade-offs.
 - Any semantic review used to support a strong alignment or successor claim searches for counterexamples before returning support and reports inaccessible evidence and uncovered scope.
 - No validation layer borrows the authority of the next.
+- Verification is proportional to the claim and affected surface. Unrelated tests, generated documents or broad gates do not strengthen relevant evidence merely by increasing their volume.
 
 ## Observable acceptance
 
@@ -108,6 +111,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - `META-013`: Evidence claiming hierarchical-intent coverage names the concrete lower-order instances it tested and, for each, recovers the higher-order intent served, attributable derivation basis and applicable scope. An empty covered set does not pass.
 - `META-014`: An adopted protocol release remains byte-identifiable through its LOCK after current meta-intent STATE advances, and external package references continue to resolve to the same artifact digest.
 - `META-015`: For a named non-empty set of recurrence cases, a cold Agent starting without the originating conversation and without procedural user directions discovers relevant current intent, prior occurrence and intervention, classifies duplicate report versus expected or unexpected recurrence from checked target evidence, preserves the result, and changes a later cold Agent's maintenance path. Evidence names every tested case and external observation; zero cases, user-directed LOG selection or an unconsumed result does not pass.
+- `META-016`: Given multiple implementation defects under unchanged intent, an Agent can repair and verify the affected realization without manufacturing a LOG, STATE revision or candidate LOCK; each semantic artifact added names its independent continuing purpose.
 
 ## Current decisions and resources
 
@@ -117,6 +121,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - No protocol 0.3 candidate is created or adopted by this revision.
 - The repository's existing semantic `counterexample-review` is the required adversarial evidence procedure for future strong alignment or successor claims; its result remains evidence-only.
 - No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied.
+- LOG, STATE and LOCK are not a completion checklist. A realization LOCK is created only when retaining an exact implementation serves an explicit handoff, release, acceptance, recovery or other continuing purpose.
 
 ## Constraints and permissions
 
@@ -162,4 +167,5 @@ These are investigation lenses over preserved provenance. They do not automatica
 - Compatibility, migration and deprecation across immutable protocol revisions.
 - Minimum current ownership and drift evidence for safe maintenance or uninstall when historical realization bytes are unavailable.
 - Positive multi-package composition evidence beyond disjoint source regions and shared generated aggregation.
+- Protocol 0.2's strict change-flow diagram can be misread as requiring LOG, STATE and LOCK churn for an implementation-only repair; current STATE rejects that reading, and a successor should make the classification branch explicit.
 - Public repository license.
