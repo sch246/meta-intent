@@ -36,7 +36,11 @@ STATE distinguishes three operational classes whenever confusing them could chan
 
 1. effects that must be realized and verified whenever the package applies;
 2. problems, regressions or claims that must be avoided when their stated condition holds;
-3. conditions that require investigation and a context-specific or user-owned decision rather than a universal response.
+3. conditional desired states that map a stated framework, implementation property or product concept to the effects and verification criteria applicable under that condition.
+
+The third class is a state relation, `C -> E`, not an instruction to act or ask the user. When C holds, the applicable desired state includes E. When C is absent and the target has no equivalent concept, E is absent from the applicable desired state and the Agent does not recreate that concept merely to preserve old wording.
+
+Condition change is a separate maintenance action. When target reality moves from C0 to C1, the Agent reprojects current STATE from higher-order intent, selected LOG decisions and checked reality. If an existing conditional branch already covers C1, applicability changes without manufacturing a semantic revision. If C1 is uncovered or invalidates the prior derivation, the Agent appends a LOG and revises STATE before replacing the realization. Only then does it judge LOCK applicability and synthesize or verify a candidate. Asking the user is one possible consequence of a newly exposed value trade-off, not the condition-change operation itself.
 
 A concrete appearance, interaction or mechanism belongs in STATE when the user makes preserving it part of correctness. It remains revisable by later authority; “locked behavior” does not create a fourth artifact. An accepted LOCK binds one exact realization and its evidence against the applicable STATE, while STATE continues to own the behavior that future realizations must preserve.
 
@@ -130,6 +134,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - `META-016`: Given multiple implementation defects under unchanged intent, an Agent can repair and verify the affected realization without manufacturing a LOG, STATE revision or candidate LOCK; each semantic artifact added names its independent continuing purpose.
 - `META-017`: Before an aggregate package is replaced, decomposed or retired, evidence enumerates its discovered user-facing capabilities, proposed owning packages, overlap and deployment status; the user classifies each capability as retained, retired or undecided, and every retained effect is traceable to the STATE of its owner before removal proceeds.
 - `META-018`: Given a package with no usable realization LOCK, a cold Agent using its STATE and selected protocol can identify the product direction, committed capabilities, applicable conditions, an implementation and installation route, relevant behavioral observations, prohibited shortcuts, and every point that requires a user decision; following that map produces a candidate whose claimed acceptance does not depend on the originating conversation.
+- `META-019`: Given a conditional STATE relation `C -> E`, a candidate realizes and verifies E when C applies and does not manufacture C's missing concept when it does not. When reality changes from C0 to C1, maintenance reprojects STATE before judging realization applicability, revising STATE only when existing branches do not cover C1 or their derivation is corrected.
 
 ## Current decisions and resources
 
