@@ -14,6 +14,8 @@ The package may contain no project implementation code. It remains meaningful wh
 
 STATE may organize intent to arbitrary depth. A lower-order intent remains traceable to the higher-order intent it serves, its attributable derivation basis and its applicable scope. That basis may be direct user specification, design decomposition, an authority decision or investigated reality feedback; only the last requires a reality-boundary source. Concrete feedback may propagate upward, but only appropriate authority changes normative user meaning.
 
+The usual development path begins with a product direction, develops observable feature commitments, records in LOG the trade-offs by which supporting capabilities were chosen, and adds condition-specific behavior as interaction with reality reveals what must remain. This is derivation, not a one-way freeze: authorized feedback may refine, split, combine, narrow or replace an earlier principle when unforeseen conditions expose that its wording no longer captures the desired product.
+
 ### `IP-1` — Preserve distinct information authority
 
 `IP-1` derives from `IP-0`: project creation and long-term maintenance require current meaning, causal source history and exact realized facts without conflating them.
@@ -28,6 +30,16 @@ LOCK makes exact factual claims and binds the evidence used for them. Bound-byte
 
 STATE must remain sufficient for an Agent to synthesize a realization above its acceptance floor when no usable realization LOCK exists. Regeneration promises STATE-level acceptance, not byte, design, language or toolchain identity.
 
+STATE is also the package's action prompt or map for an Agent without the originating conversation. At the complexity required by the product, it directs the Agent from product direction through committed capabilities to implementation, installation, relevant verification and the conditions where autonomous execution must stop for a user decision. Action sufficiency, not length or copied code, determines whether it is detailed enough.
+
+STATE distinguishes three operational classes whenever confusing them could change action:
+
+1. effects that must be realized and verified whenever the package applies;
+2. problems, regressions or claims that must be avoided when their stated condition holds;
+3. conditions that require investigation and a context-specific or user-owned decision rather than a universal response.
+
+A concrete appearance, interaction or mechanism belongs in STATE when the user makes preserving it part of correctness. It remains revisable by later authority; “locked behavior” does not create a fourth artifact. An accepted LOCK binds one exact realization and its evidence against the applicable STATE, while STATE continues to own the behavior that future realizations must preserve.
+
 ### `IP-2` — Continue across Agent sessions
 
 `IP-2` derives from `IP-0`: a project outlives any one Agent session.
@@ -36,6 +48,7 @@ STATE must remain sufficient for an Agent to synthesize a realization above its 
 - STATE exposes current meaning before historical detail.
 - Logs, STATE and LOCKs may gain internal indexes or hierarchy suited to their information without creating a fourth semantic authority.
 - Derived summaries and retrieval views remain replaceable and traceable to their covered source records.
+- The normal normative entry is one `STATE.md`. When supporting state-owned material is necessary, that entry links to it directly; required normative reading does not become a chain of documents. This physical one-jump preference does not limit semantic derivation depth.
 
 The appropriate retrieval structure and context budget remain an experiment. Full-history replay is available for audit; this STATE does not claim that bounded cold-session recovery has already been demonstrated.
 
@@ -116,6 +129,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - `META-015`: For a named non-empty set of recurrence cases, a cold Agent starting without the originating conversation and without procedural user directions discovers relevant current intent, prior occurrence and intervention, classifies duplicate report versus expected or unexpected recurrence from checked target evidence, preserves the result, and changes a later cold Agent's maintenance path. Evidence names every tested case and external observation; zero cases, user-directed LOG selection or an unconsumed result does not pass.
 - `META-016`: Given multiple implementation defects under unchanged intent, an Agent can repair and verify the affected realization without manufacturing a LOG, STATE revision or candidate LOCK; each semantic artifact added names its independent continuing purpose.
 - `META-017`: Before an aggregate package is replaced, decomposed or retired, evidence enumerates its discovered user-facing capabilities, proposed owning packages, overlap and deployment status; the user classifies each capability as retained, retired or undecided, and every retained effect is traceable to the STATE of its owner before removal proceeds.
+- `META-018`: Given a package with no usable realization LOCK, a cold Agent using its STATE and selected protocol can identify the product direction, committed capabilities, applicable conditions, an implementation and installation route, relevant behavioral observations, prohibited shortcuts, and every point that requires a user decision; following that map produces a candidate whose claimed acceptance does not depend on the originating conversation.
 
 ## Current decisions and resources
 
@@ -127,6 +141,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied.
 - LOG, STATE and LOCK are not a completion checklist. A realization LOCK is created only when retaining an exact implementation serves an explicit handoff, release, acceptance, recovery or other continuing purpose.
 - Candidate migration is an intent-refinement window, not silent acceptance. Explicit reports that a behavior must remain update the owning package's STATE; overall approval does not promote every observed implementation detail into intent.
+- STATE presentation defaults to one normative document with at most one direct jump to required supporting material. Package complexity may increase semantic detail and derivation depth without forcing chained navigation or a fixed schema for every project.
 
 ## Constraints and permissions
 

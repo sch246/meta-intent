@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.24",
+  "revision": "0.2.0-draft.25",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -41,7 +41,8 @@
     "../logs/2026-08-27-cross-session-assimilation-capability.md",
     "../logs/2026-08-27-cross-session-assimilation-authority-confirmation.md",
     "../logs/2026-08-31-artifact-proportionality-correction.md",
-    "../logs/2026-09-01-capability-retention-confirmation.md"
+    "../logs/2026-09-01-capability-retention-confirmation.md",
+    "../logs/2026-09-01-state-as-conditional-action-map.md"
   ],
   "protocol": {
     "id": "meta-intent",
