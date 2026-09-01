@@ -60,6 +60,8 @@ No accepted operator or experiment currently demonstrates this capability.
 - Feedback is distinguished as verified no change, implementation mismatch, intent clarification, intent revision, reality tension or protocol tension before mutation.
 - Authority-changing decisions preserve actor, scope, relevant base STATE and the investigated decision frame; asking or logging alone does not grant authority.
 - Classification determines which artifacts change. An implementation mismatch under already selected intent may change only the realization and focused evidence; LOG, STATE and LOCK are independent authorities rather than mandatory workflow stages.
+- During destructive migration or decomposition, the Agent presents each affected package's discovered features for user classification as retained, retired or undecided. Code, runtime state, previous installation and Agent reconstruction can discover candidates but cannot decide which features the user values or which implementation details should become normative.
+- Post-change feedback sharpens intent when the user identifies a behavior that should remain. The owning package records that confirmed behavior at the appropriate abstraction level; silence or overall satisfaction does not lock every unmentioned realization detail.
 
 ### `IP-4` — Create and maintain realizations safely
 
@@ -72,6 +74,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - Uninstall realizes current reality without one package's contribution, preserving unrelated later changes rather than blindly reversing historical diffs.
 - Intrusive shared-source realizations leave nearby, compositionally discoverable ownership evidence; comments alone never authorize deletion.
 - Several defects in one realization may be repaired as one logical implementation episode under one STATE revision. Git history preserves meaningful changes rather than diagnostic chronology.
+- Before replacing or retiring an aggregate package, the Agent inventories its responsibilities, proposed successor owner, overlap and current deployment status. Every retained desired effect is traced to an owning package STATE; unowned, duplicated or ambiguous effects remain a user decision rather than disappearing with the aggregate.
 
 ### `IP-5` — Keep protocol meaning versioned and referencable
 
@@ -112,6 +115,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - `META-014`: An adopted protocol release remains byte-identifiable through its LOCK after current meta-intent STATE advances, and external package references continue to resolve to the same artifact digest.
 - `META-015`: For a named non-empty set of recurrence cases, a cold Agent starting without the originating conversation and without procedural user directions discovers relevant current intent, prior occurrence and intervention, classifies duplicate report versus expected or unexpected recurrence from checked target evidence, preserves the result, and changes a later cold Agent's maintenance path. Evidence names every tested case and external observation; zero cases, user-directed LOG selection or an unconsumed result does not pass.
 - `META-016`: Given multiple implementation defects under unchanged intent, an Agent can repair and verify the affected realization without manufacturing a LOG, STATE revision or candidate LOCK; each semantic artifact added names its independent continuing purpose.
+- `META-017`: Before an aggregate package is replaced, decomposed or retired, evidence enumerates its discovered user-facing capabilities, proposed owning packages, overlap and deployment status; the user classifies each capability as retained, retired or undecided, and every retained effect is traceable to the STATE of its owner before removal proceeds.
 
 ## Current decisions and resources
 
@@ -122,6 +126,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - The repository's existing semantic `counterexample-review` is the required adversarial evidence procedure for future strong alignment or successor claims; its result remains evidence-only.
 - No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied.
 - LOG, STATE and LOCK are not a completion checklist. A realization LOCK is created only when retaining an exact implementation serves an explicit handoff, release, acceptance, recovery or other continuing purpose.
+- Candidate migration is an intent-refinement window, not silent acceptance. Explicit reports that a behavior must remain update the owning package's STATE; overall approval does not promote every observed implementation detail into intent.
 
 ## Constraints and permissions
 
