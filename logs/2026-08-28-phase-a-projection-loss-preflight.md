@@ -4,6 +4,8 @@ Record ID: `SRC-2026-08-28-PHASE-A-PROJECTION-LOSS-PREFLIGHT`
 
 Status: preregistered read-only experiment plan. No participant has run, no result is claimed, and this record is not selected by `state/STATE.json`. It changes no STATE, protocol, LOCK, acceptance status or authority. Raw transcripts and hidden gold remain outside the package.
 
+Archived: 2026-09-01. Experiment evidence retained for audit; consulted during the LOG/STATE cleanup.
+
 ## Question and permitted conclusion
 
 Case `PA-2026-08-28-PROJECTION-LOSS-001` asks whether a cold Agent at the historical boundary `a192ea1d9f1c26ddfd071bebbff4bbeb7e8fdca1` can investigate a STATE contraction, recover the relevant causal facts from evidence it chooses, and state what the current selected source history cannot recover.

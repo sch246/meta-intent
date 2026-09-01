@@ -4,6 +4,8 @@ Record ID: `SRC-2026-08-28-PHASE-A-CASE-001-INCONCLUSIVE-CASE-002-PREFLIGHT`
 
 Status: evaluator finding plus preregistered apparatus correction. It preserves the original participant output unread and does not revise STATE, protocol, LOCK, hidden fact gold or `META-015`. Case 001 is closed as apparatus-inconclusive; Case 002 has not started. This record is not selected by `state/STATE.json`.
 
+Archived: 2026-09-01. Experiment evidence retained for audit; consulted during the LOG/STATE cleanup.
+
 ## Case 001 evidence and disposition
 
 Claude froze prerequisite and attempt evidence in `phaseaattemptreport.tar.gz`, SHA-256 `397a11c391b3bd6eb75da8e9c9b6630df749268e89715ade576ad3d4e127e139`, 283,132 bytes. Its internal manifests verify. The prerequisite report has SHA-256 `a90808738e087d491032325aaacc8983e6fab03952c737de9bce25dd77ce6b53`.

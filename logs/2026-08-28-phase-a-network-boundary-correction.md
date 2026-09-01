@@ -4,6 +4,8 @@ Record ID: `SRC-2026-08-28-PHASE-A-NETWORK-BOUNDARY-CORRECTION`
 
 Status: preregistered correction after runner precondition evidence and before any participant launch. It supersedes only the physical-network-disable requirement in `SRC-2026-08-28-PHASE-A-PROJECTION-LOSS-PREFLIGHT`. The case, historical boundary, prompts, arms, attempt limits, hidden gold and commitment remain unchanged. No participant has run, no result is claimed, and this record is not selected by `state/STATE.json`.
 
+Archived: 2026-09-01. Experiment evidence retained for audit; consulted during the LOG/STATE cleanup.
+
 ## Checked obstruction
 
 The Claude runner reported that this harness routes both public network access and the model API through one local proxy. A fresh network namespace blocks that proxy, which blocks both GitHub and the model operation needed to run a participant. The original requirement to disable all network transport is therefore incompatible with running the real LLM participant in this harness.

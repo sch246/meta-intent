@@ -4,6 +4,8 @@ Record ID: `SRC-2026-08-28-PHASE-A-CASE-002-TERMINATION-BOUNDARY`
 
 Status: post-launch user-authorized process boundary. The user observed that apparatus review was tending toward unbounded deep-search iteration and required this experiment to have an actual end. This authority arrived after the neutral controls passed and primary-1 launched, but before the evaluator or runner read any Case 002 semantic conclusion. It is not represented as pre-launch gold or used to change participant answers, fact gold, mechanical judgment, STATE, protocol, LOCK or `META-015`. This record is not selected by `state/STATE.json`.
 
+Archived: 2026-09-01. Experiment evidence retained for audit; consulted during the LOG/STATE cleanup.
+
 ## Evidence at closure
 
 Claude froze `case002smokepass.tar.gz`, SHA-256 `948518e54df962e8ab95a5a087dd27fc54edf0aaa9328b694e90286d6d830da7`. Its payload manifest verifies. Trace tools v0.6 matched the preregistered archive digest and passed 44 of 44 tests. The fresh oversized-output and structured-search control was deterministic `valid` with complete sidecar, fingerprint and command-review binding coverage. The fresh real outside-root `Read` remained automatic `invalid`. The two controls were therefore distinguishable before Case 002 participant launch.

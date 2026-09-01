@@ -85,6 +85,8 @@ No accepted operator or experiment currently demonstrates this capability.
 - Classification determines which artifacts change. An implementation mismatch under already selected intent may change only the realization and focused evidence; LOG, STATE and LOCK are independent authorities rather than mandatory workflow stages.
 - During destructive migration or decomposition, the Agent presents each affected package's discovered features for user classification as retained, retired or undecided. Code, runtime state, previous installation and Agent reconstruction can discover candidates but cannot decide which features the user values or which implementation details should become normative.
 - Post-change feedback sharpens intent when the user identifies a behavior that should remain. The owning package records that confirmed behavior at the appropriate abstraction level; silence or overall satisfaction does not lock every unmentioned realization detail.
+- The Agent is the translator between the user and reality. The alignment loop keeps intent growing more precise: reality changes → behavior differences become visible against retained LOCK facts → the Agent presents the concrete differences in the user's terms and lowers the expression barrier, never requiring the user to pre-enumerate requirements → the user marks which differences have meaning → LOG records the occurrence, the user's actual words and the applicable conditions → STATE is refined → a fresh realization is synthesized on the clean latest target → user acceptance binds a new LOCK; the previous LOCK remains the difference surface.
+- A refined STATE must run on the new version and must remain runnable on the previously accepted version. The two realizations need not be identical; every difference must follow from clarifying or optimizing the original intent and must be better, not an obvious regression. Version- and API-specific accidentals sink into the realization, never into STATE.
 
 ### `IP-4` — Create and maintain realizations safely
 
@@ -152,7 +154,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - External packages and targets may provide bounded evidence without becoming current meta-intent meaning. Exact identities and target chronology remain recoverable through selected LOGs, frozen LOCK evidence or the owning package; hot STATE names a resource only while its role remains currently relevant.
 - No protocol 0.3 candidate is created or adopted by this revision.
 - The repository's existing semantic `counterexample-review` is the required adversarial evidence procedure for future strong alignment or successor claims; its result remains evidence-only.
-- No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied.
+- No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied. The only qualifying experiment to date, Phase A case 002, ended `partial`; its six records are retained as archived experiment evidence and are not selected by `STATE.json.logs`.
 - LOG, STATE and LOCK are not a completion checklist. A realization LOCK is created only when retaining an exact implementation serves an explicit handoff, release, acceptance, recovery or other continuing purpose.
 - Candidate migration is an intent-refinement window, not silent acceptance. Explicit reports that a behavior must remain update the owning package's STATE; overall approval does not promote every observed implementation detail into intent.
 - STATE presentation defaults to one normative document with at most one direct jump to required supporting material. Package complexity may increase semantic detail and derivation depth without forcing chained navigation or a fixed schema for every project.
@@ -161,6 +163,7 @@ No accepted operator or experiment currently demonstrates this capability.
 
 - Do not publish, push, choose a license, adopt a successor, change remote state or perform destructive/external migration without explicit user authority.
 - Do not rewrite accepted protocol bundles or truthful source evidence to make later conclusions appear inevitable. Correcting or removing a false attribution, unsupported inference or unadopted draft is evidence repair, not historical rewriting.
+- Authenticity comes first in LOG. Record what actually happened and the user's actual words; do not fabricate or embellish emotional content, and do not present an Agent paraphrase as a user quotation.
 - Do not revise STATE merely to make a candidate pass or describe unexecuted acceptance as passed.
 - Do not infer user preference from code, telemetry, frequency, surprise, generated artifacts or model agreement.
 - Do not store credentials or secrets in LOG, STATE, LOCK, examples or evidence.
@@ -190,7 +193,7 @@ These are investigation lenses over preserved provenance. They do not automatica
 
 ## Open tensions
 
-- Cold-session retrieval accuracy, context cost and causal trace quality compared with full replay; no qualifying experiment has run yet.
+- Cold-session retrieval accuracy, context cost and causal trace quality compared with full replay. Phase A case 002 ended `partial`: selected-LOG reading recovered facts without contradiction but omitted exact realization identities, and full replay did not beat the autonomous arm. No experiment has yet produced a passing result.
 - The smallest execution carrier for cross-session assimilation and recurrence review: natural-language bootstrap, Agent skill, CLI, persistent index or another mechanism; none is selected before the cold-session experiment.
 - How growing source LOGs remain usable and completely attributable without presuming that an index or graph is required.
 - How arbitrary-depth intent derivation remains traceable in practice without preselecting a mechanical representation or letting a derived view become semantic authority.

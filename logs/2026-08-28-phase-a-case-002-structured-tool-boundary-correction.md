@@ -4,6 +4,8 @@ Record ID: `SRC-2026-08-28-PHASE-A-CASE-002-STRUCTURED-TOOL-BOUNDARY-CORRECTION`
 
 Status: preregistered apparatus correction before participant launch. It supersedes only the Case 002 trace-tool identity and corresponding smoke expectation in `SRC-2026-08-28-PHASE-A-CASE-001-INCONCLUSIVE-CASE-002-PREFLIGHT`. It does not revise semantic input, fact gold, prompt, judgment rules, STATE, protocol, LOCK or `META-015`. Case 002 remains unstarted, and this record is not selected by `state/STATE.json`.
 
+Archived: 2026-09-01. Experiment evidence retained for audit; consulted during the LOG/STATE cleanup.
+
 ## Smoke blocker and diagnosis
 
 Claude froze the case-blind smoke and counterexamples as `case002smokeblocker.tar.gz`, SHA-256 `99cf3bb791521f90160efab421a3fb79679b7d13d89084d18e6bee41015574b9`. Every payload digest in its manifest verifies except the manifest's self-entry, which incorrectly names the empty-file digest; the outer archive digest and individually verified payload digests are the integrity evidence used here.

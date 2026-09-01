@@ -4,6 +4,8 @@ Record ID: `SRC-2026-08-28-PHASE-A-CASE-002-TERMINAL-RESULT`
 
 Status: final bounded experiment result. Case `PA-2026-08-28-PROJECTION-LOSS-002` ends as `partial`. This record executes the stop required by `SRC-2026-08-28-PHASE-A-CASE-002-TERMINATION-BOUNDARY`; no further retry, probe, apparatus revision, Case 003 or Phase B run follows from it. It changes no STATE, protocol, LOCK, acceptance status or `META-015`, and it is not selected by `state/STATE.json`.
 
+Archived: 2026-09-01. Experiment evidence retained for audit; consulted during the LOG/STATE cleanup.
+
 ## Evidence and released commitments
 
 Claude's terminal runner archive `case002-final-evidence.tar.gz` is 826,563 bytes, SHA-256 `27bc0693f926334b37b9dc7338e30b63a6f10627a30c30faaf672cb9b4b0102c`; all 84 manifest payloads verify. The evaluator release archive `case002-final-evaluation-release.tar.gz` is 22,759 bytes, SHA-256 `9555c886c8ee23eeefbe4c2378ac4c408fb734cc992c9f9686bb51a5a9db4e84`; it contains the released gold and salts, independent command reviews, independent validity outputs, probe adjudication and terminal evaluation, with its payload manifest.
