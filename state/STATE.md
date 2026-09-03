@@ -1,12 +1,22 @@
 # Meta-intent state
 
-Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision reorganizes current intent; it does not adopt a successor protocol.
+Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision states the core purpose in the user's plain terms and marks the remainder as derived; it does not adopt a successor protocol.
 
 ## Root intent
 
 `MI-0` — Define and maintain the intent-package system.
 
 `IP-0` — An intent package enables Agents to create and continuously maintain one project from user-owned intent while preventing accumulated implementation debt from becoming the durable basis of maintenance.
+
+### The core, in plain terms
+
+The system exists to solve implementation debt and to survive continuously changing upstream and environment.
+
+STATE is in essence a detailed installation-guide prompt: the materials and the steps by which an Agent, reading the map against the environment actually in front of it, can always install successfully and adapt to different conditions and environments.
+
+The founding assumption is that the user does not know exactly what they want either, so the first installation map is necessarily incomplete. The Agent is the translator between the user and reality; each round of environment change and user feedback makes the intent more precise and the map more operable.
+
+Everything below is derived from those three statements. A rule that cannot be traced back to keeping the map installable, adaptable and refinable is decoration, not authority, and may be dropped by the user without loss.
 
 Intent is the durable asset. Implementation realizations are disposable outputs. The package remains sufficient when all previous implementation changes are discarded, no prior environment can be reused, and the project must be rebuilt on another version, platform, framework or language while preserving the applicable user-owned effects.
 

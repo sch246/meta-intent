@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.28",
+  "revision": "0.2.0-draft.29",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -43,7 +43,8 @@
     "../logs/2026-08-31-artifact-proportionality-correction.md",
     "../logs/2026-09-01-capability-retention-confirmation.md",
     "../logs/2026-09-01-intent-state-and-log-evidence.md",
-    "../logs/2026-09-01-state-map-evidence-and-alignment-loop.md"
+    "../logs/2026-09-01-state-map-evidence-and-alignment-loop.md",
+    "../logs/2026-09-03-core-purpose-and-installation-map.md"
   ],
   "protocol": {
     "id": "meta-intent",
