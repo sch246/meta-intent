@@ -1,7 +1,7 @@
 {
   "$schema": "meta-intent/0.2/state",
   "id": "meta-intent",
-  "revision": "0.2.0-draft.31",
+  "revision": "0.2.0-draft.32",
   "status": "draft",
   "document": "STATE.md",
   "logs": [
@@ -46,7 +46,8 @@
     "../logs/2026-09-01-state-map-evidence-and-alignment-loop.md",
     "../logs/2026-09-03-core-purpose-and-installation-map.md",
     "../logs/2026-09-03-installation-map-as-irreducible-core.md",
-    "../logs/2026-09-03-generator-of-the-map.md"
+    "../logs/2026-09-03-generator-of-the-map.md",
+    "../logs/2026-09-03-executability-and-the-compile-target-question.md"
   ],
   "protocol": {
     "id": "meta-intent",
