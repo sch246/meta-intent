@@ -1,6 +1,6 @@
 # Meta-intent state
 
-Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision states the core purpose in the user's plain terms, names the installation map as the irreducible core and its reachability razor, and marks the remainder as derived; it does not adopt a successor protocol.
+Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision states the core purpose in the user's plain terms, names the installation map as the irreducible core, its reachability razor and the generator the map is maintained from, and marks the remainder as derived; it does not adopt a successor protocol.
 
 ## Root intent
 
@@ -19,6 +19,10 @@ The founding assumption is that the user does not know exactly what they want ei
 Creating a project is the entry; participating in its continued maintenance is what actually matters. A capability that only helps the first installation, and never the later rounds against a changed environment, serves the lesser half of `IP-0`.
 
 Strip every accumulated setting and idea away and the irreducible core is the installation-map metaphor. Everything below is derived from it. Because it is a map, every capability the package commits to must be reachable by following it: from entry, through the applicable conditions, to installation, the observable effect and its verification. Reachability is the razor, and it follows from the metaphor rather than being an added rule. A capability the map cannot reach is not delivered, however well it is described elsewhere; material that no route through the map has to reach holds no normative authority and may be removed without loss of intent.
+
+The map is generated, not primitive, and maintainability is the question of what generates it. Its generating set is what actually happened and what was learned from it: attributable occurrences, checked reality, the trade-offs actually weighed, and the authority events that turned any of it into meaning. LOG holds that generating set, STATE is its current closure, and a line of the map that traces back to no occurrence and no authority can be preserved but not maintained. Maintaining the map therefore means keeping the "why" and a way to iterate it, not editing its text at will.
+
+This is where the package's own complexity comes from: authority is made explicit instead of being left implicit in a conversation. That choice puts provenance, attribution and derivation basis on the map's own maintenance route, so the razor reaches them rather than cutting them. It is the same problem as creating an agent, and this package does not claim to have bounded it — how much explicit machinery the generator actually requires stays open below.
 
 Intent is the durable asset. Implementation realizations are disposable outputs. The package remains sufficient when all previous implementation changes are discarded, no prior environment can be reused, and the project must be rebuilt on another version, platform, framework or language while preserving the applicable user-owned effects.
 
@@ -206,6 +210,7 @@ These are investigation lenses over preserved provenance. They do not automatica
 
 ## Open tensions
 
+- The minimum explicit-authority machinery under which the map stays regenerable from its generator. Making authority explicit is what produces this package's own complexity; no current evidence fixes how little of it would still keep occurrences, learning and authority traceable.
 - Cold-session retrieval accuracy, context cost and causal trace quality compared with full replay. Phase A case 002 ended `partial`: selected-LOG reading recovered facts without contradiction but omitted exact realization identities, and full replay did not beat the autonomous arm. No experiment has yet produced a passing result.
 - The smallest execution carrier for cross-session assimilation and recurrence review: natural-language bootstrap, Agent skill, CLI, persistent index or another mechanism; none is selected before the cold-session experiment.
 - How growing source LOGs remain usable and completely attributable without presuming that an index or graph is required.
