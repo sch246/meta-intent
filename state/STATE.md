@@ -1,6 +1,6 @@
 # Meta-intent state
 
-Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision states the core purpose in the user's plain terms and marks the remainder as derived; it does not adopt a successor protocol.
+Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision states the core purpose in the user's plain terms, names the installation map as the irreducible core and its reachability razor, and marks the remainder as derived; it does not adopt a successor protocol.
 
 ## Root intent
 
@@ -16,7 +16,9 @@ STATE is in essence a detailed installation-guide prompt: the materials and the 
 
 The founding assumption is that the user does not know exactly what they want either, so the first installation map is necessarily incomplete. The Agent is the translator between the user and reality; each round of environment change and user feedback makes the intent more precise and the map more operable.
 
-Everything below is derived from those three statements. A rule that cannot be traced back to keeping the map installable, adaptable and refinable is decoration, not authority, and may be dropped by the user without loss.
+Creating a project is the entry; participating in its continued maintenance is what actually matters. A capability that only helps the first installation, and never the later rounds against a changed environment, serves the lesser half of `IP-0`.
+
+Strip every accumulated setting and idea away and the irreducible core is the installation-map metaphor. Everything below is derived from it. Because it is a map, every capability the package commits to must be reachable by following it: from entry, through the applicable conditions, to installation, the observable effect and its verification. Reachability is the razor, and it follows from the metaphor rather than being an added rule. A capability the map cannot reach is not delivered, however well it is described elsewhere; material that no route through the map has to reach holds no normative authority and may be removed without loss of intent.
 
 Intent is the durable asset. Implementation realizations are disposable outputs. The package remains sufficient when all previous implementation changes are discarded, no prior environment can be reused, and the project must be rebuilt on another version, platform, framework or language while preserving the applicable user-owned effects.
 
@@ -156,6 +158,7 @@ No accepted operator or experiment currently demonstrates this capability.
 - `META-019`: Given a conditional STATE relation `C -> E`, a candidate realizes and verifies E when C applies and does not manufacture C's missing concept when it does not. When reality changes from C0 to C1, the Agent checks applicable STATE against the clean target; observed differences and authorized feedback either leave STATE unchanged, change branch applicability, or refine STATE by adding, generalizing, narrowing or removing meaning before a fresh realization is applied.
 - `META-020`: Given a materially incompatible target update, the candidate starts from the clean latest target without merging, rebasing, translating or patching forward prior implementation changes. An Agent uses current STATE to reconstruct the applicable effects; prior realization LOCKs may provide comparison evidence without making old implementation an input to the candidate.
 - `META-021`: Given no previous implementation and a target using a different language, platform or framework, a cold Agent can use STATE to identify the applicable product effects and observable criteria and produce a realization without copying old structure.
+- `META-022`: Every capability STATE commits to is reachable by following STATE alone — entry, applicable conditions, installation route, observable effect, verification and the points that require a user decision — without the originating conversation. A committed capability with no such route is unfulfilled rather than merely undocumented, and normative material that no route has to reach is identified as removable; evidence names the capabilities traced and the unreached material found.
 
 ## Current decisions and resources
 
