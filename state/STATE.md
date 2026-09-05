@@ -1,209 +1,145 @@
-# Meta-intent state
+# Meta-intent installation map
 
-Status: evolving draft authority interpreted by the adopted protocol 0.2 LOCK. This revision reorganizes current intent; it does not adopt a successor protocol.
+Status: evolving draft under adopted protocol 0.2. Current meaning is maintained here; [STATE.json](STATE.json) selects the unchanged protocol and supporting sources. This revision does not release or adopt a successor protocol.
 
-## Root intent
+## Purpose
 
-`MI-0` — Define and maintain the intent-package system.
+`MI-0`: maintain the intent-package system. `IP-0`: help Agents create and continuously maintain projects as upstream software, environments and user understanding change, without making accumulated implementation debt the permanent basis of maintenance.
 
-`IP-0` — An intent package enables Agents to create and continuously maintain one project from user-owned intent while preventing accumulated implementation debt from becoming the durable basis of maintenance.
+STATE is a detailed installation prompt: a map from desired effects and present conditions to a working realization. “Installation” includes creation, adaptation, repair, composition and removal. Every supported capability must be reachable from this entry. Detail is sufficient when an Agent without the originating conversation can act and verify the applicable effects; neither a short feature list nor exhaustive implementation narration guarantees that.
 
-Intent is the durable asset. Implementation realizations are disposable outputs. The package remains sufficient when all previous implementation changes are discarded, no prior environment can be reused, and the project must be rebuilt on another version, platform, framework or language while preserving the applicable user-owned effects.
+The user may not initially know what they want. The first map is necessarily incomplete. The Agent translates between user feedback and checked reality, implements within existing authority, and improves the map as meaningful distinctions become known. A complete design is not a prerequisite for beginning authorized development. Ordinary evidence-resolvable implementation choices do not require another user decision.
 
-STATE is a living, accumulative operating guide expected to become more accurate and more portable through repeated contact with incompatible realities. Its purpose is not to describe one implementation permanently, but to approach intent constraints that continue to produce consistent accepted effects under conditions not known when the project began.
+Intent is the durable asset; realizations are replaceable. The map must remain useful without old implementation bytes or the original environment, including on another platform, framework or language. Concrete appearance, interaction or mechanism remains part of STATE when preserving it matters to the user. An incidental class, file layout or historical workaround does not become a permanent requirement merely because an Agent wrote it.
 
-When target reality changes incompatibly, the default is clean reconstruction: stop carrying prior implementation changes forward, establish the latest clean target, inspect its capabilities and conditions, align and refine STATE, then synthesize and apply a fresh realization. Do not merge, rebase, translate or patch old customization into the new target merely because it exists. Historical realization facts remain available for comparison without making old code an input or constraint on the replacement.
+## Use this map
 
-## Derived intent
+1. Locate the package through its standalone or embedded bootstrap entry; bootstrap locates current STATE and does not replace its semantic authority. Read the affected package's STATE and the new request. Identify the desired effect, existing authority and uncertainty relevant to this task. Read selected sources when resolving why, attribution, supersession or a missing decision; do not replay all history for routine maintenance.
+2. Inspect the actual target: version, available capabilities, installed composition, configuration, data and owned source contributions. Separate repository declarations, historical deployment observations and current observations. None alone proves the others.
+3. Follow the applicable installation or maintenance route below. Reuse current working capabilities where they satisfy intent. Report a concrete user-visible trade-off when current authority cannot decide it; do not ask again for an action already authorized within this task's scope.
+4. Verify the affected observable effects, including relevant interactions with other packages. Record exactly what was observed and what remains untested. A structural check, successful build or patch application supports only its own claim.
+5. Return useful learning to its owner: correct the implementation for an implementation defect; improve STATE for a missing condition, clarified effect or changed route; preserve a selective source record when its why will matter again. Retain an exact realization only when a handoff, release, recovery or acceptance purpose needs it.
 
-STATE may organize intent to arbitrary depth. A lower-order intent remains traceable to the higher-order intent it serves, its attributable derivation basis and its applicable scope. That basis may be direct user specification, design decomposition, an authority decision or investigated reality feedback; only the last requires a reality-boundary source. Concrete feedback may propagate upward, but only appropriate authority changes normative user meaning.
+These are the questions an operation must resolve, not mandatory document-production stages or a requirement to interrupt implementation after each edit.
 
-The usual development path begins with a product direction, develops observable feature commitments, records in LOG the trade-offs by which supporting capabilities were chosen, and adds condition-specific behavior as interaction with reality reveals what must remain. This is derivation, not a one-way freeze: authorized feedback may refine, split, combine, narrow or replace an earlier principle when unforeseen conditions expose that its wording no longer captures the desired product.
+## Write and maintain a package map
 
-### `IP-1` — Preserve distinct information authority
+A package normally has one `STATE.md`, with direct links to any required supporting material. Semantic derivation may be arbitrarily deep, but required reading should not become a chain of documents. Use existing README sections, scripts, provider documentation or state-owned detail when they already own the needed information. A link must identify what it supplies and when to use it.
 
-`IP-1` derives from `IP-0`: project creation and long-term maintenance require current meaning, causal source history and exact realized facts without conflating them.
+Include the information the actual project needs:
 
-- `LOG` preserves selective, fact-aligned causal source records: attributable desired effects and decisions, checked reality, translated tensions, alternatives that were actually considered or rejected, corrections and useful verified no-change findings. It is not raw transcript, Agent reasoning history or current authority.
-- `STATE` is the current projection of intent, acceptance, resources, constraints, permissions, decisions, uncertainty and selected protocol.
-- `LOCK` is an immutable, purpose-bound cache and record of one exact realization, including retained bytes or references, target identity, digests, evidence, status and authority event.
+- **Desired effects and why:** product direction, retained capabilities, user-visible details that define correctness, acceptance observations, relevant exclusions and unresolved choices. Trace derived capabilities to the higher-order purpose, attribution and applicable scope; reality feedback is one possible basis, not the only one.
+- **Present conditions and resources:** how to inspect the target, find necessary inputs and dependencies, and distinguish supported, missing and incompatible capabilities. A historical tested version is evidence, not an implicit permanent version restriction.
+- **An executable route:** concrete entry commands or direct procedural references, necessary ordering, configuration inputs, adaptation choices and the relevant verification. Explain conditions that make a step necessary or obsolete. A map cannot delegate all installation knowledge to an absent or unusable LOCK.
+- **Composition and removal:** which package supplies each required effect, which shared target changes support it, other current consumers, how installed contributions are recognized, and what removal must preserve. Receipt files and source markers provide evidence with stated scope; they do not independently decide ownership or authorize deletion.
+- **Evidence and uncertainty:** where consequential user choices and checked lessons came from, what has actually been installed or observed, and what still needs investigation. Keep historical deployment facts attributable instead of presenting them as timeless current status.
 
-Normative STATE is established and changed through attributable authority within scope. Reality mismatch may expose implementation error, factual correction, infeasibility or a decision tension, but implementation cannot silently rewrite user intent.
+These are content needs, not a fixed heading schema or a requirement for duplicated fields. Natural-language STATE owns product meaning. Machine-readable fields should serve a real discovery or validation consumer; do not maintain a second hand-written copy of revision, acceptance or deployment facts without a reason and a synchronization method.
 
-LOG immutability protects truthful evidence of events, not every sentence that an Agent once wrote. A faithfully recorded decision, checked condition or actual trade-off remains historical evidence even when later meaning changes; preserve it and record the later event separately. A false attribution, unsupported inference or unadopted draft never acquires historical authority from being saved or committed and may be corrected or removed. Any hypothesis retained for future investigation states that status and its evidence limits instead of presenting itself as an occurrence or decision.
+Conditional meaning is `C -> E`: when condition C applies, effect E belongs to the desired state. If the target has no equivalent concept, do not recreate C merely to satisfy old wording. Changing conditions is a separate feedback event: investigate whether an existing branch applies, becomes irrelevant, or exposes an omission in the map. Refine that meaning within authority rather than recording each new environment as another unconditional rule.
 
-LOCK makes exact factual claims and binds the evidence used for them. Bound-byte and identity mismatch is mechanically detectable; a digest does not prove that every observation is truthful or sufficient. Target drift may make a LOCK inapplicable without erasing what its frozen evidence established within its original scope. Hierarchy and abstraction are orthogonal to this boundary: a detailed mechanism belongs in STATE when the user makes it part of correctness, while a coarse commit identity belongs in LOCK when it records what existed.
+## Installation, adaptation and removal
 
-STATE must remain sufficient for an Agent with no old code to synthesize a realization above its acceptance floor on a different implementation stack. Regeneration promises STATE-level acceptance, not byte, design, language or toolchain identity.
+For a new installation, discover the package, inspect the target and composition, and synthesize a realization from applicable STATE. A usable LOCK may accelerate this but is optional. Prepare and verify changes in an isolated or reversible scope appropriate to the operation before an authorized activation.
 
-STATE is also the package's action prompt or map for an Agent without the originating conversation. At the complexity required by the product, it directs the Agent from product direction through committed capabilities to implementation, installation, relevant verification and the conditions where autonomous execution must stop for a user decision. Action sufficiency, not length or copied code, determines whether it is detailed enough.
+For an implementation defect under materially unchanged conditions and intent, repair the realization and perform focused verification. Several defects may form one logical repair episode. A LOG, STATE revision, LOCK or separate commit per diagnostic step is not required.
 
-STATE distinguishes three operational classes whenever confusing them could change action:
+For a materially incompatible target, follow the user's clean-reconstruction policy: preserve needed data and comparison evidence, establish the clean latest target, inspect its capabilities, align applicable STATE, then synthesize fresh changes. Do not merge, rebase, translate or patch forward old customization merely because it exists. Historical realizations explain prior effects without becoming implementation inputs or constraints on the replacement.
 
-1. effects that must be realized and verified whenever the package applies;
-2. problems, regressions or claims that must be avoided when their stated condition holds;
-3. conditional desired states that map a stated framework, implementation property or product concept to the effects and verification criteria applicable under that condition.
+Refinement must remain usable on both the new target and the previously accepted version. The realizations need not be identical; each difference must follow clarification or improvement of the original intent and make the result better without an obvious regression. Version-specific routes may differ while preserving the applicable effect. Report unsupported or untested branches honestly.
 
-The third class is a state relation, `C -> E`, not an instruction to act or ask the user. When C holds, the applicable desired state includes E. When C is absent and the target has no equivalent concept, E is absent from the applicable desired state and the Agent does not recreate that concept merely to preserve old wording.
+For composition or responsibility transfer, identify the retained effect, its new owner, retired or remaining contributions, current consumers and installed state. A feature's owner, the author of a historical Host patch and the holder of its installation receipt can differ. Moving a Chat policy between plugins does not automatically transfer a shared Host extension or its removal authority. Regenerate shared derived artifacts from current contributors rather than claiming their aggregate bytes as one plugin's property.
 
-Condition change is a separate feedback action. When target reality moves from C0 to C1, the Agent determines which current STATE branches still apply. A difference may show that an existing branch applies, that a branch has become irrelevant, or that earlier STATE omitted or misstated the user's intent. In the last case, checked reality and user feedback act back on current STATE: LOG records the clarification or decision and STATE is refined before a fresh realization is applied. This feedback loop is distinct from a conditional desired state, and asking the user occurs only when meaning or a value trade-off cannot be recovered from current authority.
+Before destructive migration, decomposition or aggregate retirement, inventory discovered capabilities and their proposed owners. Recover existing user decisions; ask the user to classify genuinely undecided effects as retained, retired or undecided before removal. Every retained effect must reach its owner's STATE. Code and prior use discover candidates; they do not decide what the user values. Overall satisfaction does not approve every unmentioned implementation detail.
 
-A concrete appearance, interaction or mechanism belongs in STATE when the user makes preserving it part of correctness. It remains revisable by later authority; “locked behavior” does not create a fourth artifact. An accepted LOCK binds one exact realization and its evidence against the applicable STATE, while STATE continues to own the behavior that future realizations must preserve.
+Uninstall realizes the current target without one package's contribution while preserving unrelated later changes and remaining consumers. Inspect actual ownership and drift, including shared-source changes, profile membership and generated outputs. A reverse-applicable patch proves textual reversibility, not that removal is appropriate for the current composition. Intrusive source contributions need locally discoverable ownership evidence; markers alone never authorize removal. Resolve ambiguous shared ownership before the affected removal.
 
-### `IP-2` — Continue across Agent sessions
+Failed, incomplete or stale candidates do not silently replace accepted last-good. Keep applicability separate from historical integrity: an old LOCK can remain truthful while no longer matching the target. Activation, external publication and destructive actions use the authorization already granted for their scope; missing authority still requires a user decision.
 
-`IP-2` derives from `IP-0`: a project outlives any one Agent session.
+## Sources, current meaning and exact realizations
 
-- A cold Agent can deterministically discover the package, its current STATE, selected protocol, causal sources and relevant realizations.
-- STATE exposes current meaning before historical detail.
-- Logs, STATE and LOCKs may gain internal indexes or hierarchy suited to their information without creating a fourth semantic authority.
-- Derived summaries and retrieval views remain replaceable and traceable to their covered source records.
-- The normal normative entry is one `STATE.md`. When supporting state-owned material is necessary, that entry links to it directly; required normative reading does not become a chain of documents. This physical one-jump preference does not limit semantic derivation depth.
+`IP-1` preserves three distinct information roles:
 
-The appropriate retrieval structure and context budget remain an experiment. Full-history replay is available for audit; this STATE does not claim that bounded cold-session recovery has already been demonstrated.
+- **LOG** records selected actual occurrences, attributable user decisions, checked conditions, consequential alternatives and useful negative findings. It explains why; it is neither a raw transcript nor current authority.
+- **STATE** carries current meaning and the operational map: intent, acceptance, resources, permissions, constraints, decisions and uncertainty. Implementation or test success cannot silently redefine it.
+- **LOCK** retains one exact purpose-bound realization, its input and output identities, target, evidence and authority. It makes factual claims about that realization, not permanent design requirements.
 
-#### `IP-2.1` — Carry maintenance operations across sessions
+User meaning and scope govern Agent interpretation. Distinguish the user's own words from an assistant proposal pasted in a user message, an inferred design choice and an observed behavior. Later explicit corrections supersede earlier proposals within their scope. Preserve a short faithful quotation when wording matters; do not publish complete conversations, credentials or private environment details merely to establish provenance.
 
-`IP-2.1` derives from `IP-2` and `IP-3`: locating package artifacts is insufficient when the next Agent still needs the originating conversation or user instructions about which history to inspect.
+Truthful event evidence remains history after meaning changes. False attribution, unsupported inference and an unadopted Agent draft do not acquire authority from being committed; they may be corrected or removed as evidence repair. Label retained hypotheses and their limits. Protocol 0.2's file-level selected-LOG immutability does not yet express this distinction fully; retain existing bound bytes and report that protocol tension rather than resealing accepted history.
 
-- A cold Agent receiving new feedback can query current intent and source history, recover relevant prior occurrences and interventions, and produce durable results that a later cold Agent actually consumes.
-- The cycle distinguishes another description of one occurrence from a new recurrence using attributable evidence. Unexpected recurrence investigates both the prior intervention and the maintained route that failed to prevent or expose it; the resulting repair becomes available to the next recurrence.
-- Stable handling may leave the LLM path when it is mechanical within existing authority. Bypassing a user-owned decision boundary for a named future event class requires explicit delegation and returns to investigation when its assumptions fail.
-- The capability does not depend on the originating conversation, a user instruction to inspect particular LOGs, or one predetermined runtime, index or storage structure.
+LOCK digests prove identity, not truth, sufficiency, authorship or authority. Reference-backed realizations distinguish immutable source identity, governed paths, installed effects and removal ownership. Unavailable bytes do not erase intent or prevent fresh synthesis; they may limit exact recovery or removal evidence.
 
-No accepted operator or experiment currently demonstrates this capability.
+## Continuity and feedback
 
-### `IP-3` — Translate between intent and reality
+`IP-2` requires a cold Agent to discover current meaning, relevant reasons and realizations without the originating conversation. Indexes, summaries and retrieval views may help, but remain replaceable routes to their sources rather than another semantic authority.
 
-`IP-3` derives from `IP-0`: continuous maintenance requires checked feedback to reach the narrowest responsible layer.
+`IP-2.1` carries maintenance learning across sessions: recover a prior occurrence and intervention, distinguish a duplicate report from recurrence, investigate an unexpected recurrence, and preserve a result that a later Agent actually uses. Stable mechanical handling may leave the LLM path within existing authority. A future class of user-owned decisions requires explicit delegation before automation may bypass that decision.
 
-- The user owns desired effects, values, permissions, trade-offs, protocol adoption and semantic approval.
-- The Agent owns investigation, evidence collection, feasibility analysis, tension translation, candidate synthesis and authorized verification.
-- Target reality supplies facts and constraints but cannot silently become user intent.
-- Feedback is distinguished as verified no change, implementation mismatch, intent clarification, intent revision, reality tension or protocol tension before mutation.
-- Authority-changing decisions preserve actor, scope, relevant base STATE and the investigated decision frame; asking or logging alone does not grant authority.
-- Classification determines which artifacts change. An implementation mismatch under already selected intent may change only the realization and focused evidence; LOG, STATE and LOCK are independent authorities rather than mandatory workflow stages.
-- During destructive migration or decomposition, the Agent presents each affected package's discovered features for user classification as retained, retired or undecided. Code, runtime state, previous installation and Agent reconstruction can discover candidates but cannot decide which features the user values or which implementation details should become normative.
-- Post-change feedback sharpens intent when the user identifies a behavior that should remain. The owning package records that confirmed behavior at the appropriate abstraction level; silence or overall satisfaction does not lock every unmentioned realization detail.
-- The Agent is the translator between the user and reality. The alignment loop keeps intent growing more precise: reality changes → behavior differences become visible against retained LOCK facts → the Agent presents the concrete differences in the user's terms and lowers the expression barrier, never requiring the user to pre-enumerate requirements → the user marks which differences have meaning → LOG records the occurrence, the user's actual words and the applicable conditions → STATE is refined → a fresh realization is synthesized on the clean latest target → user acceptance binds a new LOCK; the previous LOCK remains the difference surface.
-- A refined STATE must run on the new version and must remain runnable on the previously accepted version. The two realizations need not be identical; every difference must follow from clarifying or optimizing the original intent and must be better, not an obvious regression. Version- and API-specific accidentals sink into the realization, never into STATE.
+`IP-3` is the translation loop: visible differences and user feedback expose missing meaning; the Agent expresses the consequences in the user's terms, recovers or obtains the relevant decision, updates the owning map, and tests the applicable effect. The user does not need to pre-enumerate all requirements. Asking and logging alone grant no authority.
 
-### `IP-4` — Create and maintain realizations safely
+Historical Phase A case 002 was partial. Neither that old result nor present documentation demonstrates current cross-session learning. `META-015` remains unproved until a named, non-empty set of cold-session recurrence cases shows attributable recovery, correct duplicate/recurrence classification and actual later consumption without user-directed LOG selection. Do not infer a universal model limitation from one historical experiment.
 
-`IP-4` derives from `IP-0`: project intent must survive installation, change, composition and removal.
+## Protocol and verification
 
-- Installation is synthesis from STATE and current reality, optionally accelerated by a usable LOCK.
-- For a materially incompatible target, the Agent discards prior implementation changes as candidate inputs, starts from the clean latest target, checks current capabilities and conditions, aligns and where authorized refines STATE, and only then applies a fresh realization. A focused repair remains appropriate when target conditions and intent are materially unchanged.
-- Failed, incomplete or stale candidates cannot silently replace accepted last-good.
-- Current applicability and drift are investigated separately from frozen historical integrity.
-- Composition and conflict handling preserve package identity and do not use discovery order or hidden last-writer-wins as semantic decisions.
-- Uninstall realizes current reality without one package's contribution, preserving unrelated later changes rather than blindly reversing historical diffs.
-- Intrusive shared-source realizations leave nearby, compositionally discoverable ownership evidence; comments alone never authorize deletion.
-- Several defects in one realization may be repaired as one logical implementation episode under one STATE revision. Git history preserves meaningful changes rather than diagnostic chronology.
-- Before replacing or retiring an aggregate package, the Agent inventories its responsibilities, proposed successor owner, overlap and current deployment status. Every retained desired effect is traced to an owning package STATE; unowned, duplicated or ambiguous effects remain a user decision rather than disappearing with the aggregate.
+`IP-4` covers realization lifecycle above. `IP-5` keeps protocol meaning versioned and referencable. `IP-6` keeps structural evidence, semantic review and user acceptance distinct.
 
-### `IP-5` — Keep protocol meaning versioned and referencable
+Protocol 0.2 remains the adopted interpreter. Its [protocol text](../locks/protocol-0.2/PROTOCOL.md) defines the selected ontology, authority, lifecycle, composition, conformance and governance as well as concrete topology and serialization; its [LOCK](../locks/protocol-0.2/LOCK.json) retains exact bytes and adoption evidence. Existing conforming packages continue selecting that identity and digest. Local installation maps can be useful without claiming 0.2 conformance; completing their content does not silently migrate their format.
 
-`IP-5` derives from `IP-0`: packages need one comparable operating model and an exact immutable revision they can select.
+Current meta-intent STATE may evolve while accepted protocol bundles remain immutable. A successor needs investigated tension, a separate candidate bundle, migration and conformance evidence, and an explicit adoption decision. No successor is created or adopted here. The 0.2 change-flow diagram must not be read as requiring LOG → STATE → LOCK for every repair; the [artifact proportionality decision](../logs/2026-08-31-artifact-proportionality-correction.md) explains the current correction.
 
-- Meta-intent STATE carries the current desired semantics of the intent-package system.
-- A protocol LOCK is the concrete immutable release of one adopted protocol revision. It binds the exact protocol text or frozen projection, STATE and source inputs, validator or other artifacts, evidence and adoption decision.
-- Other packages select the protocol owner, revision, LOCK location and protocol-artifact digest from STATE; they do not copy a protocol-reference LOCK into their own realization area.
-- Current meta-intent STATE may continue to evolve after adoption. The accepted protocol LOCK remains externally referencable historical last-good and is never resealed.
-- A successor requires investigated tension, candidate LOCK, migration and conformance evidence, and a separate explicit adoption event. Structural self-validation cannot approve its own semantics.
+For changes to current maps, verify references, consistency, authority attribution and action sufficiency. For 0.2 structure or bindings, use the existing validator from this repository:
 
-### `IP-6` — Separate validation authorities
+```sh
+node locks/protocol-0.2/bin/validate.mjs .
+```
 
-`IP-6` derives from `IP-0`: different claims require different evidence and authority.
+When working on validator behavior, run its focused suite:
 
-- Deterministic validation proves mechanically decidable structure, containment, identities, digests and lifecycle invariants.
-- Versioned read-only Agent validation intents may provide bounded semantic and counterexample evidence.
-- Authorized users decide meaning, acceptance, permissions and trade-offs.
-- Any semantic review used to support a strong alignment or successor claim searches for counterexamples before returning support and reports inaccessible evidence and uncovered scope.
-- No validation layer borrows the authority of the next.
-- Verification is proportional to the claim and affected surface. Unrelated tests, generated documents or broad gates do not strengthen relevant evidence merely by increasing their volume.
+```sh
+node --test locks/protocol-0.2/tests/validate.test.mjs
+```
+
+For a strong semantic alignment or successor claim, use the existing read-only [counterexample review](../locks/protocol-0.2/experiments/semantic-checks/counterexample-review.md), including inaccessible evidence and uncovered cases. It supplies evidence only. A practical map trial names a package and target, starts a cold Agent at STATE, observes its installation or adaptation route and relevant product effects, and repairs places where it needed to guess or recover the originating conversation. A documentation review alone is not such a trial.
+
+## Maintain meta-intent itself
+
+This repository supplies the map and protocol artifacts; it has no application service to deploy. A fresh operator can obtain it with `git clone https://github.com/sch246/meta-intent.git <destination>` and enter `state/STATE.md`. Inspect the checkout, branch, local changes and selected protocol before editing.
+
+For a current-meaning change, edit this STATE and any directly affected entry guidance. Preserve the actual source in `logs/` only when it has continuing decision value; select that record in `state/STATE.json.logs`, advance the STATE revision and keep status honest. Existing protocol identity, digest and accepted bundles remain unchanged unless a separate protocol adoption is the authorized task. A factual or procedural correction need not manufacture a new realization.
+
+Run the structural validator above, check changed references and `git diff --check`, and review the diff against the source decision. Commit the intended files together when committing is authorized. Before an authorized push, inspect the configured remote and upstream movement; publish reviewed commits without overwriting unrelated changes. A rejected non-fast-forward push requires investigation, not forced replacement. Publication preserves the documentation and does not establish runtime or user acceptance.
 
 ## Observable acceptance
 
-- `META-001`: A cold Agent can locate current STATE, the selected protocol LOCK, supporting provenance and package realizations in either standalone or embedded form; bootstrap guidance does not become semantic authority.
-- `META-002`: Protocol 0.2 defines the ontology, topology, information flow, authority, lifecycle, composition, conformance, governance and evolution needed to operate a package without the historical conversation.
-- `META-003`: A natural-language package with no project implementation and an empty realization-LOCK set remains sufficient semantic input for candidate synthesis while selecting an exact adopted protocol LOCK.
-- `META-004`: LOG, STATE, LOCK artifacts and acceptance evidence remain separately attributable; lower layers cannot redefine higher-authority meaning.
-- `META-005`: Feedback is investigated and classified before state or realization mutation; only semantic or authority changes revise normative STATE.
-- `META-006`: Agent autonomy ends when alternatives change user-visible meaning, acceptance, permissions, persistent cost, authority, destructive/external action or unresolved shared ownership.
-- `META-007`: Failed, incomplete or stale candidates cannot replace accepted last-good; STATE advance does not erase frozen historical evidence.
-- `META-008`: Composition, conflict handling and uninstall preserve unrelated current effects and reject hidden precedence and blind reversal.
-- `META-009`: Protocol tension flows to this canonical lineage; a successor cannot approve itself and does not replace 0.2 without explicit adoption.
-- `META-010`: Structural checks, semantic counterexample evidence and user acceptance remain distinct and make no claim beyond their observed scope.
-- `META-011`: Reference-backed realizations separate immutable source identity, governed scope, installed effects and removal ownership without treating availability as semantic authority.
-- `META-012`: Intrusive shared-source changes remain locally discoverable and safe to recompose or remove only after current ownership and drift investigation.
-- `META-013`: Evidence claiming hierarchical-intent coverage names the concrete lower-order instances it tested and, for each, recovers the higher-order intent served, attributable derivation basis and applicable scope. An empty covered set does not pass.
-- `META-014`: An adopted protocol release remains byte-identifiable through its LOCK after current meta-intent STATE advances, and external package references continue to resolve to the same artifact digest.
-- `META-015`: For a named non-empty set of recurrence cases, a cold Agent starting without the originating conversation and without procedural user directions discovers relevant current intent, prior occurrence and intervention, classifies duplicate report versus expected or unexpected recurrence from checked target evidence, preserves the result, and changes a later cold Agent's maintenance path. Evidence names every tested case and external observation; zero cases, user-directed LOG selection or an unconsumed result does not pass.
-- `META-016`: Given multiple implementation defects under unchanged intent, an Agent can repair and verify the affected realization without manufacturing a LOG, STATE revision or candidate LOCK; each semantic artifact added names its independent continuing purpose.
-- `META-017`: Before an aggregate package is replaced, decomposed or retired, evidence enumerates its discovered user-facing capabilities, proposed owning packages, overlap and deployment status; the user classifies each capability as retained, retired or undecided, and every retained effect is traceable to the STATE of its owner before removal proceeds.
-- `META-018`: Given a package with no usable realization LOCK, a cold Agent using its STATE and selected protocol can identify the product direction, committed capabilities, applicable conditions, an implementation and installation route, relevant behavioral observations, prohibited shortcuts, and every point that requires a user decision; following that map produces a candidate whose claimed acceptance does not depend on the originating conversation.
-- `META-019`: Given a conditional STATE relation `C -> E`, a candidate realizes and verifies E when C applies and does not manufacture C's missing concept when it does not. When reality changes from C0 to C1, the Agent checks applicable STATE against the clean target; observed differences and authorized feedback either leave STATE unchanged, change branch applicability, or refine STATE by adding, generalizing, narrowing or removing meaning before a fresh realization is applied.
-- `META-020`: Given a materially incompatible target update, the candidate starts from the clean latest target without merging, rebasing, translating or patching forward prior implementation changes. An Agent uses current STATE to reconstruct the applicable effects; prior realization LOCKs may provide comparison evidence without making old implementation an input to the candidate.
-- `META-021`: Given no previous implementation and a target using a different language, platform or framework, a cold Agent can use STATE to identify the applicable product effects and observable criteria and produce a realization without copying old structure.
+These retained identifiers express obligations, not a compulsory checklist for every operation.
 
-## Current decisions and resources
+- `META-001`: discover current STATE, protocol, provenance and realizations in standalone or embedded form; bootstrap only locates them.
+- `META-002`: the selected protocol supplies a complete operating model without the historical conversation.
+- `META-003`: a package with no project implementation and no realization LOCK remains sufficient input for synthesis; a conforming package selects its adopted protocol.
+- `META-004`: sources, current meaning, exact realizations and acceptance evidence remain separately attributable; lower layers cannot redefine higher authority.
+- `META-005`: investigate and distinguish defects, clarification, revision, reality/protocol tension and useful no-change findings before relevant mutation.
+- `META-006`: continue within existing authority and obtain only missing user-owned decisions.
+- `META-007`: preserve accepted last-good on incomplete replacement and frozen history after STATE advances.
+- `META-008`: compose and remove contributions without hidden precedence, unrelated damage or blind reversal.
+- `META-009`: route protocol tension to the canonical lineage; no self-adoption or implicit successor.
+- `META-010`: keep structural, semantic and user evidence distinct; claims do not exceed observations.
+- `META-011`: distinguish reference identity, governed scope, installed effects and current removal ownership.
+- `META-012`: intrusive contributions remain discoverable and removable only after current ownership and drift investigation.
+- `META-013`: hierarchical-coverage evidence names a non-empty set of derived intents and recovers each purpose, derivation basis and condition.
+- `META-014`: accepted protocol bytes and external digest references remain stable after current STATE advances.
+- `META-015`: demonstrate the cold-session recurrence and consumption cycle described above, not a zero-case or unconsumed report.
+- `META-016`: repair multiple defects under unchanged intent without mandatory semantic artifacts.
+- `META-017`: before aggregate retirement, account for discovered capabilities, existing or new user classifications, successor ownership, overlap and deployment status.
+- `META-018`: from STATE and its applicable interpreter, a cold Agent finds direction, effects, conditions, resources, installation steps, meaningful observations and user decision points, then produces a candidate without originating chat or a usable realization LOCK.
+- `META-019`: apply conditional effects without manufacturing absent concepts; refine the map as conditions change.
+- `META-020`: reconstruct on a clean incompatible target without carrying old customization forward as implementation inputs.
+- `META-021`: realize applicable effects on another platform, framework or language without copying old implementation structure.
 
-- Protocol 0.2 remains adopted and active. Its accepted LOCK is the canonical interpreter and immutable historical last-good for this lineage.
-- The canonical public repository is `https://github.com/sch246/meta-intent`; the user retains semantic authority until explicitly delegating a scope.
-- External packages and targets may provide bounded evidence without becoming current meta-intent meaning. Exact identities and target chronology remain recoverable through selected LOGs, frozen LOCK evidence or the owning package; hot STATE names a resource only while its role remains currently relevant.
-- No protocol 0.3 candidate is created or adopted by this revision.
-- The repository's existing semantic `counterexample-review` is the required adversarial evidence procedure for future strong alignment or successor claims; its result remains evidence-only.
-- No accepted management operator currently performs the cross-session assimilation cycle. The present workflow still relies on conversation continuity and user-triggered retrieval, so `META-015` is not satisfied. The only qualifying experiment to date, Phase A case 002, ended `partial`; its six records are retained as archived experiment evidence and are not selected by `STATE.json.logs`.
-- LOG, STATE and LOCK are not a completion checklist. A realization LOCK is created only when retaining an exact implementation serves an explicit handoff, release, acceptance, recovery or other continuing purpose.
-- Candidate migration is an intent-refinement window, not silent acceptance. Explicit reports that a behavior must remain update the owning package's STATE; overall approval does not promote every observed implementation detail into intent.
-- STATE presentation defaults to one normative document with at most one direct jump to required supporting material. Package complexity may increase semantic detail and derivation depth without forcing chained navigation or a fixed schema for every project.
+## Remaining boundaries
 
-## Constraints and permissions
+The canonical public lineage is [sch246/meta-intent](https://github.com/sch246/meta-intent). The user retains semantic authority unless explicitly delegating scope. Do not infer preference from code, telemetry, frequency or model agreement. Do not silently weaken acceptance to make an implementation pass, claim unexecuted tests or deployment, choose a license, publish or perform destructive/external actions beyond existing authorization.
 
-- Do not publish, push, choose a license, adopt a successor, change remote state or perform destructive/external migration without explicit user authority.
-- Do not rewrite accepted protocol bundles or truthful source evidence to make later conclusions appear inevitable. Correcting or removing a false attribution, unsupported inference or unadopted draft is evidence repair, not historical rewriting.
-- Authenticity comes first in LOG. Record what actually happened and the user's actual words; do not fabricate or embellish emotional content, and do not present an Agent paraphrase as a user quotation.
-- Do not revise STATE merely to make a candidate pass or describe unexecuted acceptance as passed.
-- Do not infer user preference from code, telemetry, frequency, surprise, generated artifacts or model agreement.
-- Do not store credentials or secrets in LOG, STATE, LOCK, examples or evidence.
-- Do not require package-provided executable project code, universal environment capture or byte-identical regeneration unless STATE explicitly makes one of those effects normative.
-- Keep the fixed pre-protocol bootstrap surface minimal and make incompatible change explicit.
+This system is not a universal package registry, dependency solver, deployment platform, global personal memory or transcript archive. It does not promise byte-identical regeneration or automatic resolution of user-owned semantic conflicts.
 
-## Non-goals
-
-- Global personal memory across unrelated projects.
-- Raw transcript archival or deterministic reconstruction of natural-language meaning from complete history.
-- A package registry, dependency solver, deployment platform or universal target ABI.
-- Automatic semantic conflict resolution, automatic user-preference inference or automatic governance succession.
-- Guaranteed sustained attention or progress on arbitrarily difficult learning. Loss of attention may suspend investigation, but does not establish falsity, resolution or permanent exclusion.
-- Model, vendor, programming-language, target-framework or runtime lock-in.
-
-## Investigation hints
-
-Surprise is a candidate explanation for how attention, learning and growing provenance may organize themselves; it is not current protocol machinery or semantic authority.
-
-- Reality that defeats current expectation can supply attention.
-- Learning can sustain attention by producing further distinctions and expectations through which further surprise becomes possible. Second-order surprise refers to this endogenous continuation, not to a second evaluator scoring whether the first learning was good.
-- When learning ceases to produce enough surprise to hold attention, the attempted path, encountered boundary and situated loss of novelty may still inform later reading. Similar histories can naturally become less informative and be generalized without a mandated counter, score, node type or graph.
-- A changed environment reopens an old difficulty only when the change can bear on the earlier obstruction; unrelated drift does not reset its history.
-- Zero observed surprise is inconclusive when changing reality was excluded from observation, and surprise does not distinguish useful learning from noise by itself.
-
-These are investigation lenses over preserved provenance. They do not automatically revise STATE, infer user preference or require a predetermined retrieval structure.
-
-## Open tensions
-
-- Cold-session retrieval accuracy, context cost and causal trace quality compared with full replay. Phase A case 002 ended `partial`: selected-LOG reading recovered facts without contradiction but omitted exact realization identities, and full replay did not beat the autonomous arm. No experiment has yet produced a passing result.
-- The smallest execution carrier for cross-session assimilation and recurrence review: natural-language bootstrap, Agent skill, CLI, persistent index or another mechanism; none is selected before the cold-session experiment.
-- How growing source LOGs remain usable and completely attributable without presuming that an index or graph is required.
-- How arbitrary-depth intent derivation remains traceable in practice without preselecting a mechanical representation or letting a derived view become semantic authority.
-- Whether query-driven reading and continuation of ordinary provenance naturally preserve attention loss, difficulty generalization and context-sensitive reopening across cold sessions without a special schema or metric.
-- Evidence coverage that prevents zero observations, zero tested instances or an unscoped `passed` claim from becoming vacuous success.
-- How a current projection can shed target-specific facts only after their continuing explanatory or recovery value remains available in source provenance or immutable realization evidence.
-- Protocol 0.2 makes selected LOG files immutable once committed or bound. A successor must distinguish truthful event evidence from unconfirmed Agent drafts so that file-level immutability does not preserve false attribution or speculative reasoning as history.
-- Portable signing, authentication, maintainer succession and concurrent authority decisions.
-- Compatibility, migration and deprecation across immutable protocol revisions.
-- Minimum current ownership and drift evidence for safe maintenance or uninstall when historical realization bytes are unavailable.
-- Positive multi-package composition evidence beyond disjoint source regions and shared generated aggregation.
-- Protocol 0.2's strict change-flow diagram can be misread as requiring LOG, STATE and LOCK churn for an implementation-only repair; current STATE rejects that reading, and a successor should make the classification branch explicit.
-- Public repository license.
+Open work includes demonstrated cold-session retrieval and learning, usable growing provenance, minimum evidence for shared-source removal without historical bytes, positive multi-package composition trials, successor migration, authentication and maintainer succession, and licensing. No persistent index, graph, special learning schema or management operator is selected. Historical hypotheses about surprise and attention remain in their source logs as investigation ideas; they do not govern installation or establish success, failure or user preference.
