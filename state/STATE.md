@@ -36,6 +36,8 @@ Include the information the actual project needs:
 
 These are content needs, not a fixed heading schema or a requirement for duplicated fields. Natural-language STATE owns product meaning. Machine-readable fields should serve a real discovery or validation consumer; do not maintain a second hand-written copy of revision, acceptance or deployment facts without a reason and a synchronization method.
 
+When wording admits materially different observable outcomes, use a small distinguishing scenario before treating one interpretation as confirmed. For persistent UI state, identify whose state it is and which transitions preserve it: “keep the sidebar open across sessions” leaves global persistence and per-session restoration unresolved. Investigate repository facts directly and recover existing user decisions before asking. A focused [grill-me interview](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md), with one consequential question and a recommendation at a time, can help; neither an installed skill nor an exhaustive interview is required. Continue independent authorized work. Put the confirmed behavior and distinguishing acceptance in the owning map, with attribution when it matters again.
+
 Conditional meaning is `C -> E`: when condition C applies, effect E belongs to the desired state. If the target has no equivalent concept, do not recreate C merely to satisfy old wording. Changing conditions is a separate feedback event: investigate whether an existing branch applies, becomes irrelevant, or exposes an omission in the map. Refine that meaning within authority rather than recording each new environment as another unconditional rule.
 
 ## Installation, adaptation and removal
@@ -119,7 +121,7 @@ These retained identifiers express obligations, not a compulsory checklist for e
 - `META-003`: a package with no project implementation and no realization LOCK remains sufficient input for synthesis; a conforming package selects its adopted protocol.
 - `META-004`: sources, current meaning, exact realizations and acceptance evidence remain separately attributable; lower layers cannot redefine higher authority.
 - `META-005`: investigate and distinguish defects, clarification, revision, reality/protocol tension and useful no-change findings before relevant mutation.
-- `META-006`: continue within existing authority and obtain only missing user-owned decisions.
+- `META-006`: continue within existing authority and obtain only missing user-owned decisions; when wording permits different observable outcomes, resolve the consequential distinction with a concrete scenario before treating an interpretation as confirmed.
 - `META-007`: preserve accepted last-good on incomplete replacement and frozen history after STATE advances.
 - `META-008`: compose and remove contributions without hidden precedence, unrelated damage or blind reversal.
 - `META-009`: route protocol tension to the canonical lineage; no self-adoption or implicit successor.
